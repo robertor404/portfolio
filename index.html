@@ -70,15 +70,15 @@
             
             <!-- Left: Logo -->
             <div class="flex items-center justify-start md:w-1/3 w-full">
-                <button id="logo-btn" class="font-bold text-xl tracking-tight text-indigo-600 dark:text-indigo-400 shrink-0 hover:opacity-80 transition-opacity">Roberto R.</button>
+                <button id="logo-btn" class="font-bold text-xl tracking-tight text-indigo-600 dark:text-indigo-400 shrink-0 hover:opacity-80 transition-opacity focus:outline-none">Roberto R.</button>
             </div>
             
             <!-- Center: Segmented Control Tabs -->
             <div class="flex items-center justify-center w-full md:w-1/3 order-3 md:order-none">
-                <div class="flex p-1 bg-slate-200/70 dark:bg-slate-800/70 rounded-full space-x-1 text-sm font-semibold whitespace-nowrap border border-slate-300/50 dark:border-slate-700/50 shadow-inner group-hover:scale-105 transition-transform duration-300" id="main-nav">
-                    <button data-target="view-componenti" data-i18n="nav_comp" class="main-tab-btn px-5 py-2 rounded-full transition-all duration-300 focus:outline-none text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-slate-700/50 hover:-translate-y-1 hover:shadow-sm">Componenti</button>
-                    <button data-target="view-casi-d-uso" data-i18n="nav_cases" class="main-tab-btn px-5 py-2 rounded-full transition-all duration-300 focus:outline-none text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-slate-700/50 hover:-translate-y-1 hover:shadow-sm">Casi d'Uso</button>
-                    <button data-target="view-contatti" data-i18n="nav_contact" class="main-tab-btn px-5 py-2 rounded-full transition-all duration-300 focus:outline-none text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-slate-700/50 hover:-translate-y-1 hover:shadow-sm">Contatti</button>
+                <div class="flex p-1 bg-slate-200/70 dark:bg-slate-800/70 rounded-full space-x-1 text-sm font-semibold whitespace-nowrap border border-slate-300/50 dark:border-slate-700/50 shadow-inner transition-transform duration-300" id="main-nav">
+                    <button data-target="view-componenti" data-i18n="nav_comp" class="main-tab-btn px-5 py-2 rounded-full transition-all duration-300 focus:outline-none text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-slate-700/50 hover:-translate-y-1 hover:shadow-md active:scale-95 active:bg-slate-300 dark:active:bg-slate-600">Componenti</button>
+                    <button data-target="view-casi-d-uso" data-i18n="nav_cases" class="main-tab-btn px-5 py-2 rounded-full transition-all duration-300 focus:outline-none text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-slate-700/50 hover:-translate-y-1 hover:shadow-md active:scale-95 active:bg-slate-300 dark:active:bg-slate-600">Casi d'Uso</button>
+                    <button data-target="view-contatti" data-i18n="nav_contact" class="main-tab-btn px-5 py-2 rounded-full transition-all duration-300 focus:outline-none text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-slate-700/50 hover:-translate-y-1 hover:shadow-md active:scale-95 active:bg-slate-300 dark:active:bg-slate-600">Contatti</button>
                 </div>
             </div>
 
@@ -90,10 +90,10 @@
                     <button class="p-2 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-indigo-500" aria-label="Cambia Lingua" id="lang-btn">
                         <svg class="w-5 h-5 transition-transform duration-300 group-hover/ctrl:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </button>
-                    <div class="absolute top-full right-0 mt-2 w-32 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover/ctrl:opacity-100 group-hover/ctrl:visible transition-all duration-200 overflow-hidden py-1 transform origin-top-right scale-95 group-hover/ctrl:scale-100">
-                        <button class="w-full text-left px-4 py-2 text-sm text-indigo-600 dark:text-indigo-400 font-bold bg-slate-50 dark:bg-slate-800 lang-option transition-colors duration-200" data-lang="it">🇮🇹 Italiano</button>
-                        <button class="w-full text-left px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 lang-option" data-lang="en">🇬🇧 English</button>
-                        <button class="w-full text-left px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 lang-option" data-lang="es">🇪🇸 Español</button>
+                    <div class="absolute top-full right-0 mt-2 w-32 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover/ctrl:opacity-100 group-hover/ctrl:visible transition-all duration-200 overflow-hidden py-1 transform origin-top-right scale-95 group-hover/ctrl:scale-100 z-50">
+                        <button class="w-full text-left px-4 py-2 text-sm text-indigo-600 dark:text-indigo-400 font-bold bg-slate-50 dark:bg-slate-800 lang-option transition-colors duration-200 hover:bg-slate-100 dark:hover:bg-slate-700" data-lang="it">🇮🇹 Italiano</button>
+                        <button class="w-full text-left px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 lang-option transition-colors duration-200" data-lang="en">🇬🇧 English</button>
+                        <button class="w-full text-left px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 lang-option transition-colors duration-200" data-lang="es">🇪🇸 Español</button>
                     </div>
                 </div>
 
@@ -103,27 +103,27 @@
                         <svg class="w-5 h-5 transition-transform duration-300 group-hover/ctrl:-rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                         <span id="a11y-indicator" class="hidden absolute top-0 right-0 w-2.5 h-2.5 bg-indigo-500 rounded-full border-2 border-white dark:border-slate-900 transition-transform duration-300 scale-100"></span>
                     </button>
-                    <div class="absolute top-full right-0 mt-2 w-56 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover/ctrl:opacity-100 group-hover/ctrl:visible transition-all duration-200 overflow-hidden py-2 px-1 transform origin-top-right scale-95 group-hover/ctrl:scale-100">
+                    <div class="absolute top-full right-0 mt-2 w-56 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover/ctrl:opacity-100 group-hover/ctrl:visible transition-all duration-200 overflow-hidden py-2 px-1 transform origin-top-right scale-95 group-hover/ctrl:scale-100 z-50">
                         <div class="px-3 pb-2 mb-2 border-b border-slate-100 dark:border-slate-800 text-xs font-bold text-slate-400 uppercase tracking-wider" data-i18n="a11y_title">Accessibilità</div>
                         
-                        <button class="a11y-toggle w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800" data-feature="a11y-large-text">
-                            <span data-i18n="a11y_text">Testo Ingrandito</span> <div class="w-8 h-4 bg-slate-300 dark:bg-slate-600 rounded-full relative toggle-bg"><div class="w-3 h-3 bg-white rounded-full absolute top-0.5 left-0.5 transition-transform toggle-knob"></div></div>
+                        <button class="a11y-toggle w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" data-feature="a11y-large-text">
+                            <span data-i18n="a11y_text">Testo Ingrandito</span> <div class="w-8 h-4 bg-slate-300 dark:bg-slate-600 rounded-full relative toggle-bg transition-colors"><div class="w-3 h-3 bg-white rounded-full absolute top-0.5 left-0.5 transition-transform duration-300 toggle-knob"></div></div>
                         </button>
                         
-                        <button class="a11y-toggle w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800" data-feature="a11y-dyslexia">
-                            <span data-i18n="a11y_font">Font Dislessia</span> <div class="w-8 h-4 bg-slate-300 dark:bg-slate-600 rounded-full relative toggle-bg"><div class="w-3 h-3 bg-white rounded-full absolute top-0.5 left-0.5 transition-transform toggle-knob"></div></div>
+                        <button class="a11y-toggle w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" data-feature="a11y-dyslexia">
+                            <span data-i18n="a11y_font">Font Dislessia</span> <div class="w-8 h-4 bg-slate-300 dark:bg-slate-600 rounded-full relative toggle-bg transition-colors"><div class="w-3 h-3 bg-white rounded-full absolute top-0.5 left-0.5 transition-transform duration-300 toggle-knob"></div></div>
                         </button>
                         
-                        <button class="a11y-toggle w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800" data-feature="a11y-high-contrast">
-                            <span data-i18n="a11y_contrast">Alto Contrasto</span> <div class="w-8 h-4 bg-slate-300 dark:bg-slate-600 rounded-full relative toggle-bg"><div class="w-3 h-3 bg-white rounded-full absolute top-0.5 left-0.5 transition-transform toggle-knob"></div></div>
+                        <button class="a11y-toggle w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" data-feature="a11y-high-contrast">
+                            <span data-i18n="a11y_contrast">Alto Contrasto</span> <div class="w-8 h-4 bg-slate-300 dark:bg-slate-600 rounded-full relative toggle-bg transition-colors"><div class="w-3 h-3 bg-white rounded-full absolute top-0.5 left-0.5 transition-transform duration-300 toggle-knob"></div></div>
                         </button>
 
-                        <button class="a11y-toggle w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800" data-feature="a11y-no-motion">
-                            <span data-i18n="a11y_motion">Riduci Animazioni</span> <div class="w-8 h-4 bg-slate-300 dark:bg-slate-600 rounded-full relative toggle-bg"><div class="w-3 h-3 bg-white rounded-full absolute top-0.5 left-0.5 transition-transform toggle-knob"></div></div>
+                        <button class="a11y-toggle w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" data-feature="a11y-no-motion">
+                            <span data-i18n="a11y_motion">Riduci Animazioni</span> <div class="w-8 h-4 bg-slate-300 dark:bg-slate-600 rounded-full relative toggle-bg transition-colors"><div class="w-3 h-3 bg-white rounded-full absolute top-0.5 left-0.5 transition-transform duration-300 toggle-knob"></div></div>
                         </button>
 
                         <div class="px-3 pt-3 pb-1 mt-1 border-t border-slate-100 dark:border-slate-800 text-xs font-bold text-slate-400 uppercase tracking-wider">Filtri Daltonismo</div>
-                        <select id="colorblind-select" class="w-[calc(100%-1.5rem)] mx-3 mt-1 bg-slate-100 dark:bg-slate-800 border-none rounded text-xs py-1.5 px-2 text-slate-700 dark:text-slate-300 outline-none focus:ring-2 focus:ring-indigo-500">
+                        <select id="colorblind-select" class="w-[calc(100%-1.5rem)] mx-3 mt-1 bg-slate-100 dark:bg-slate-800 border-none rounded text-xs py-1.5 px-2 text-slate-700 dark:text-slate-300 outline-none focus:ring-2 focus:ring-indigo-500 transition-colors duration-200 cursor-pointer">
                             <option value="none" data-i18n="a11y_cb_none">Nessun filtro</option>
                             <option value="a11y-protanopia">Protanopia (Rosso-Verde)</option>
                             <option value="a11y-deuteranopia">Deuteranopia (Verde-Rosso)</option>
@@ -132,11 +132,11 @@
                 </div>
 
                 <!-- Theme Toggle -->
-                <button id="theme-toggle" role="switch" aria-checked="false" class="group relative inline-flex h-8 w-16 items-center rounded-full bg-slate-300 dark:bg-slate-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-slate-50 dark:focus:ring-offset-slate-900 shrink-0 ring-1 ring-inset ring-slate-400/50 dark:ring-slate-600/50 shadow-inner hover:scale-110" aria-label="Toggle Dark Mode">
+                <button id="theme-toggle" role="switch" aria-checked="false" class="group relative inline-flex h-8 w-16 items-center rounded-full bg-slate-300 dark:bg-slate-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-slate-50 dark:focus:ring-offset-slate-900 shrink-0 ring-1 ring-inset ring-slate-400/50 dark:ring-slate-600/50 shadow-inner hover:scale-105 active:scale-95" aria-label="Toggle Dark Mode">
                     <span class="sr-only">Attiva Modalità Scura</span>
-                    <span id="theme-toggle-knob" class="flex items-center justify-center h-6 w-6 translate-x-1 rounded-full bg-white dark:bg-slate-900 shadow-sm transition-transform duration-300 group-hover:rotate-12 group-hover:shadow-md group-hover:scale-110">
-                        <span id="icon-autumn" class="text-sm leading-none transition-opacity duration-200 group-hover:animate-bounce">🍂</span>
-                        <span id="icon-halloween" class="absolute text-sm leading-none opacity-0 transition-opacity duration-200 group-hover:animate-bounce">🎃</span>
+                    <span id="theme-toggle-knob" class="flex items-center justify-center h-6 w-6 translate-x-1 rounded-full bg-white dark:bg-slate-900 shadow-sm transition-transform duration-300 group-hover:rotate-12 group-hover:shadow-md">
+                        <span id="icon-autumn" class="text-sm leading-none transition-opacity duration-200">🍂</span>
+                        <span id="icon-halloween" class="absolute text-sm leading-none opacity-0 transition-opacity duration-200">🎃</span>
                     </span>
                 </button>
             </div>
@@ -144,7 +144,7 @@
         </nav>
     </header>
 
-    <main class="flex-1 flex flex-col relative">
+    <main class="flex-1 flex flex-col relative overflow-hidden">
         
         <!-- VIEW: INTRO -->
         <div id="view-intro" class="view-section animate-fade-in-up flex-1 flex flex-col justify-center">
@@ -162,19 +162,19 @@
                 <h2 class="text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-8" data-i18n="hero_ask">Cosa vorresti esplorare?</h2>
                 
                 <div class="flex flex-col md:flex-row gap-6 w-full justify-center max-w-4xl mx-auto">
-                    <button class="intro-nav-btn flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-indigo-500 dark:hover:border-indigo-400 p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 group text-left relative overflow-hidden hover:-translate-y-2" data-target="view-componenti">
+                    <button class="intro-nav-btn flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-indigo-500 dark:hover:border-indigo-400 p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 group text-left relative overflow-hidden hover:-translate-y-2 focus:outline-none" data-target="view-componenti">
                         <div class="absolute top-0 right-0 w-24 h-24 bg-indigo-50 dark:bg-indigo-900/20 rounded-bl-full -z-10 transition-all duration-500 group-hover:scale-[3] group-hover:opacity-50"></div>
                         <div class="text-indigo-600 dark:text-indigo-400 mb-3 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg></div>
                         <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1 transition-colors" data-i18n="nav_comp">Componenti</h3>
                         <p class="text-sm text-slate-500 dark:text-slate-400 relative z-10">Esplora la libreria UI accessibile.</p>
                     </button>
-                    <button class="intro-nav-btn flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-400 p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 group text-left relative overflow-hidden hover:-translate-y-2" data-target="view-casi-d-uso">
+                    <button class="intro-nav-btn flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-400 p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 group text-left relative overflow-hidden hover:-translate-y-2 focus:outline-none" data-target="view-casi-d-uso">
                         <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-50 dark:bg-emerald-900/20 rounded-bl-full -z-10 transition-all duration-500 group-hover:scale-[3] group-hover:opacity-50"></div>
                         <div class="text-emerald-600 dark:text-emerald-400 mb-3 transform transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div>
                         <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1 transition-colors" data-i18n="nav_cases">Casi d'Uso</h3>
                         <p class="text-sm text-slate-500 dark:text-slate-400 relative z-10">Analisi UX e Redesign complessi.</p>
                     </button>
-                    <button class="intro-nav-btn flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-amber-500 dark:hover:border-amber-400 p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 group text-left relative overflow-hidden hover:-translate-y-2" data-target="view-contatti">
+                    <button class="intro-nav-btn flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-amber-500 dark:hover:border-amber-400 p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 group text-left relative overflow-hidden hover:-translate-y-2 focus:outline-none" data-target="view-contatti">
                         <div class="absolute top-0 right-0 w-24 h-24 bg-amber-50 dark:bg-amber-900/20 rounded-bl-full -z-10 transition-all duration-500 group-hover:scale-[3] group-hover:opacity-50"></div>
                         <div class="text-amber-600 dark:text-amber-400 mb-3 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div>
                         <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1 transition-colors" data-i18n="nav_contact">Contatti</h3>
@@ -189,8 +189,8 @@
             <section class="py-12 px-6 sm:px-12 lg:px-24 bg-transparent transition-colors flex-1">
                 <div class="max-w-7xl mx-auto">
                     <div class="mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Componenti UI Interattivi</h2>
-                        <p class="text-slate-600 dark:text-slate-400 text-lg max-w-3xl">Una libreria di componenti studiati per l'Accessibilità, l'Usabilità e il Design System. Clicca sull'icona &lt;/&gt; per simulare la copia del codice.</p>
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4 transition-colors">Componenti UI Interattivi</h2>
+                        <p class="text-slate-600 dark:text-slate-400 text-lg max-w-3xl transition-colors">Una libreria di componenti studiati per l'Accessibilità, l'Usabilità e il Design System. Clicca sull'icona &lt;/&gt; per simulare la copia del codice.</p>
                     </div>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pb-20">
@@ -202,14 +202,13 @@
                                     <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Theme Switch</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Toggle animato.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Theme Switch')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Theme Switch')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex items-center justify-center">
-                                <button id="demo-toggle-btn" role="switch" aria-checked="false" class="relative inline-flex h-8 w-16 items-center rounded-full bg-slate-300 dark:bg-slate-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-slate-50">
-                                    <span class="sr-only">Toggle</span>
-                                    <span id="demo-toggle-knob" class="inline-block h-6 w-6 translate-x-1 rounded-full bg-white transition-transform duration-300 shadow-sm"></span>
+                                <button id="demo-toggle-btn" role="switch" aria-checked="false" class="relative inline-flex h-8 w-16 items-center rounded-full bg-slate-300 dark:bg-slate-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-slate-50 dark:focus:ring-offset-slate-800 hover:scale-105 active:scale-95 shadow-inner">
+                                    <span id="demo-toggle-knob" class="inline-block h-6 w-6 translate-x-1 rounded-full bg-white shadow-sm transition-transform duration-300"></span>
                                 </button>
                             </div>
                         </div>
@@ -219,14 +218,14 @@
                             <div class="w-full mb-4 flex justify-between items-start z-10">
                                 <div class="text-left">
                                     <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Async Button</h3>
-                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Stati di caricamento.</p>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Feedback caricamento.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Async Button')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Async Button')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex items-center justify-center">
-                                <button id="action-btn" class="relative flex items-center justify-center w-32 h-10 bg-indigo-600 dark:bg-indigo-500 text-white rounded-lg hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-colors focus:outline-none focus:ring-4 focus:ring-indigo-300 shadow-sm">
+                                <button id="action-btn" class="relative flex items-center justify-center w-32 h-10 bg-indigo-600 dark:bg-indigo-500 text-white rounded-lg hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-indigo-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-95">
                                     <span id="btn-text">Invia Dati</span>
                                     <svg id="btn-spinner" class="hidden absolute w-5 h-5 animate-spin text-white" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path></svg>
                                     <svg id="btn-success" class="hidden absolute w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
@@ -241,184 +240,208 @@
                                     <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Password A11y</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Visibilità testo.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Password Input')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Password Input')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex items-center justify-center">
-                                <div class="relative w-full">
-                                    <input id="password-input" type="password" class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-lg pl-3 pr-10 py-2.5 outline-none focus:ring-2 focus:ring-indigo-500 text-slate-900 dark:text-white" value="12345678">
-                                    <button id="toggle-password" type="button" class="absolute inset-y-0 right-0 flex items-center pr-3 text-slate-400 hover:text-slate-600 focus:outline-none">
-                                        <svg id="icon-show" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-                                        <svg id="icon-hide" class="hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"/></svg>
+                                <div class="relative w-full max-w-[200px]">
+                                    <input type="password" id="password-input" class="w-full pr-10 pl-3 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-slate-900 dark:text-white transition-shadow shadow-sm" value="secret123">
+                                    <button type="button" id="toggle-password" class="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-indigo-600 focus:outline-none" aria-label="Toggle password visibility">
+                                        <svg id="icon-show" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                                        <svg id="icon-hide" class="h-5 w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" /></svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
 
                         <!-- 4. Skeleton Loader -->
-                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group cursor-pointer" id="skeleton-container">
+                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group">
                             <div class="w-full mb-4 flex justify-between items-start z-10">
                                 <div class="text-left">
-                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Skeleton UI</h3>
-                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Clicca per caricare i dati.</p>
+                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Skeleton Loader</h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Clicca per simulare i dati.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Skeleton Loader'); event.stopPropagation();">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Skeleton')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex items-center justify-center">
-                                <div id="state-skeleton" class="w-full flex items-center space-x-3 animate-pulse">
-                                    <div class="rounded-full bg-slate-300 dark:bg-slate-700 h-10 w-10"></div>
-                                    <div class="flex-1 space-y-2 py-1"><div class="h-2 bg-slate-300 dark:bg-slate-700 rounded w-3/4"></div><div class="h-2 bg-slate-300 dark:bg-slate-700 rounded w-1/2"></div></div>
-                                </div>
-                                <div id="state-data" class="hidden w-full flex items-center space-x-3">
-                                    <img src="https://ui-avatars.com/api/?name=Roberto+R&background=A33B00&color=FAF4EC" alt="User" class="rounded-full h-10 w-10 border border-slate-200 dark:border-slate-600 shadow-sm">
-                                    <div class="flex-1"><p class="text-sm font-bold text-slate-900 dark:text-white">Roberto R.</p><p class="text-xs text-slate-500 dark:text-slate-400">Product Designer</p></div>
+                                <div id="skeleton-container" class="cursor-pointer w-full max-w-[200px] p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                                    <div id="state-skeleton" class="animate-pulse flex space-x-3">
+                                        <div class="rounded-full bg-slate-200 dark:bg-slate-700 h-10 w-10 shrink-0"></div>
+                                        <div class="flex-1 space-y-2 py-1">
+                                            <div class="h-3 bg-slate-200 dark:bg-slate-700 rounded w-3/4"></div>
+                                            <div class="h-3 bg-slate-200 dark:bg-slate-700 rounded w-1/2"></div>
+                                        </div>
+                                    </div>
+                                    <div id="state-data" class="hidden flex space-x-3">
+                                        <img class="h-10 w-10 rounded-full" src="https://ui-avatars.com/api/?name=R+R&background=6366f1&color=fff" alt="">
+                                        <div class="flex-1">
+                                            <div class="text-sm font-semibold text-slate-900 dark:text-white">Roberto R.</div>
+                                            <div class="text-xs text-slate-500 dark:text-slate-400">Designer</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 5. Accordion -->
-                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group">
+                        <!-- 5. Accordion (Disclosure) -->
+                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group col-span-1 md:col-span-2">
                             <div class="w-full mb-4 flex justify-between items-start z-10">
                                 <div class="text-left">
-                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Accordion</h3>
-                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Focus accessibile.</p>
+                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Accordion (Disclosure)</h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Gestione spazio verticale.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Accordion')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Accordion')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
-                            <div class="flex-1 w-full flex flex-col items-center justify-center">
-                                <div class="bg-white dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-600 w-full overflow-hidden shadow-sm">
-                                    <button id="accordion-btn" aria-expanded="false" class="flex justify-between items-center w-full p-3 text-sm font-medium text-slate-800 dark:text-white focus:outline-none focus:bg-slate-50 dark:focus:bg-slate-800">
-                                        <span>Specifiche UX</span><svg id="accordion-icon" class="w-4 h-4 transition-transform text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <div class="flex-1 w-full flex items-center justify-center">
+                                <div class="w-full max-w-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden shadow-sm">
+                                    <button id="accordion-btn" aria-expanded="false" class="flex justify-between items-center w-full px-4 py-3 text-sm font-semibold text-slate-800 dark:text-white bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none transition-colors">
+                                        <span>Dettagli Tecnici</span>
+                                        <svg id="accordion-icon" class="w-5 h-5 text-slate-500 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </button>
-                                    <div id="accordion-content" class="hidden p-3 text-xs text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700">Contenuto nascosto per ridurre il carico cognitivo.</div>
+                                    <div id="accordion-content" class="hidden px-4 py-3 text-sm text-slate-600 dark:text-slate-400 border-t border-slate-100 dark:border-slate-700 transition-all">
+                                        Componente ottimizzato per screen reader tramite attributi aria-expanded e aria-controls. Animazione fluida.
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 6. Star Rating -->
+                        <!-- 6. Rating (Star) -->
                         <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group">
                             <div class="w-full mb-4 flex justify-between items-start z-10">
                                 <div class="text-left">
-                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Star Rating</h3>
-                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Navigabile via Tab.</p>
+                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Interactive Rating</h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Micro-interazioni.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Star Rating')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Star Rating')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex items-center justify-center">
-                                <div class="flex items-center gap-1" id="star-rating"></div>
+                                <div id="star-rating" class="flex flex-row-reverse justify-center group/rating cursor-pointer">
+                                    <!-- Stars injected via JS -->
+                                </div>
                             </div>
                         </div>
 
-                        <!-- 7. Range Slider -->
+                        <!-- 7. Custom Range Slider -->
                         <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group">
                             <div class="w-full mb-4 flex justify-between items-start z-10">
                                 <div class="text-left">
                                     <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Range Slider</h3>
-                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Selezione fluida.</p>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Input continuo visivo.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Range Slider')">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                                </button>
-                            </div>
-                            <div class="flex-1 w-full flex flex-col items-center justify-center">
-                                <input type="range" id="custom-slider" min="0" max="100" value="50" class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-indigo-600 dark:accent-indigo-400 outline-none">
-                                <p id="slider-value" class="mt-4 text-sm font-bold text-indigo-600 dark:text-indigo-400">50%</p>
-                            </div>
-                        </div>
-
-                        <!-- 8. Checkbox/Radio -->
-                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group">
-                            <div class="w-full mb-4 flex justify-between items-start z-10">
-                                <div class="text-left">
-                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Form Controls</h3>
-                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Scalabili e curati.</p>
-                                </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Form Controls')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Range Slider')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex flex-col justify-center gap-4">
-                                <label class="flex items-center space-x-3 cursor-pointer group/item">
-                                    <input type="checkbox" checked class="w-5 h-5 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500 cursor-pointer">
-                                    <span class="text-sm font-medium text-slate-800 dark:text-slate-200 group-hover/item:text-indigo-600 transition-colors">Scelta Multipla</span>
-                                </label>
-                                <label class="flex items-center space-x-3 cursor-pointer group/item">
-                                    <input type="radio" name="r" checked class="w-5 h-5 text-indigo-600 border-slate-300 focus:ring-indigo-500 cursor-pointer">
-                                    <span class="text-sm font-medium text-slate-800 dark:text-slate-200 group-hover/item:text-indigo-600 transition-colors">Scelta Singola</span>
-                                </label>
+                                <div class="flex justify-between items-center text-sm font-medium text-slate-600 dark:text-slate-300">
+                                    <span>Volume</span>
+                                    <span id="slider-value" class="bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">50%</span>
+                                </div>
+                                <input type="range" id="custom-slider" min="0" max="100" value="50" class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-indigo-600 dark:accent-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-300">
                             </div>
                         </div>
 
-                        <!-- 9. Tabs -->
+                        <!-- 8. Badge Status -->
+                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group">
+                            <div class="w-full mb-4 flex justify-between items-start z-10">
+                                <div class="text-left">
+                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Status Badges</h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Semantica cromatica.</p>
+                                </div>
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Badges')">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                </button>
+                            </div>
+                            <div class="flex-1 w-full flex flex-wrap items-center justify-center gap-3">
+                                <span class="px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800/50 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Success</span>
+                                <span class="px-2.5 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-400 border border-amber-200 dark:border-amber-800/50 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Warning</span>
+                                <span class="px-2.5 py-1 rounded-full text-xs font-medium bg-rose-100 text-rose-800 dark:bg-rose-900/40 dark:text-rose-400 border border-rose-200 dark:border-rose-800/50 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span> Error</span>
+                            </div>
+                        </div>
+
+                        <!-- 9. Component Tabs -->
                         <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group col-span-1 md:col-span-2">
                             <div class="w-full mb-4 flex justify-between items-start z-10">
                                 <div class="text-left">
-                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Tabs Component</h3>
-                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Navigazione intra-pagina veloce.</p>
+                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Component Tabs</h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Navigazione locale.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Tabs')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Tabs')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
-                            <div class="flex-1 w-full flex flex-col">
-                                <div class="border-b border-slate-200 dark:border-slate-700 flex space-x-6">
-                                    <button class="comp-tab-btn text-sm font-semibold text-indigo-600 dark:text-indigo-400 border-b-2 border-indigo-600 dark:border-indigo-400 pb-2 focus:outline-none transition-colors" data-target="tab-profile">Dettagli Profilo</button>
-                                    <button class="comp-tab-btn text-sm font-semibold text-slate-500 hover:text-slate-700 dark:text-slate-400 pb-2 border-b-2 border-transparent focus:outline-none transition-colors" data-target="tab-security">Sicurezza Account</button>
+                            <div class="flex-1 w-full flex flex-col justify-center">
+                                <div class="border-b border-slate-200 dark:border-slate-700">
+                                    <nav class="-mb-px flex space-x-6" aria-label="Tabs">
+                                        <button class="comp-tab-btn border-indigo-600 dark:border-indigo-400 text-indigo-600 dark:text-indigo-400 whitespace-nowrap py-2 border-b-2 font-medium text-sm focus:outline-none transition-colors" data-target="tab-preview">Preview</button>
+                                        <button class="comp-tab-btn border-transparent text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 whitespace-nowrap py-2 border-b-2 font-medium text-sm focus:outline-none transition-colors" data-target="tab-code">Code</button>
+                                    </nav>
                                 </div>
-                                <div id="tab-profile" class="comp-tab-content mt-4 flex-1 flex items-center text-sm text-slate-600 dark:text-slate-300">Gestione dei dati personali. I tab permettono di condensare grandi form.</div>
-                                <div id="tab-security" class="comp-tab-content hidden mt-4 flex-1 flex items-center text-sm text-slate-600 dark:text-slate-300">Area dedicata alla 2FA (Autenticazione a due fattori).</div>
+                                <div class="pt-4 mt-auto">
+                                    <div id="tab-preview" class="comp-tab-content text-sm text-slate-600 dark:text-slate-400 transition-opacity">Contenuto visivo renderizzato del componente selezionato. Clicca l'altra tab.</div>
+                                    <div id="tab-code" class="comp-tab-content hidden text-sm font-mono bg-slate-900 dark:bg-black text-emerald-400 p-3 rounded-lg overflow-x-auto transition-opacity shadow-inner">
+                                        &lt;div class="px-4 py-2"&gt;...&lt;/div&gt;
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- 10. Toast Notification -->
-                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] group">
-                            <div class="w-full mb-4 flex justify-between items-start z-10 relative">
+                        <!-- 10. Toast & Snackbar (Material) -->
+                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group overflow-hidden">
+                            <div class="w-full mb-4 flex justify-between items-start z-10">
                                 <div class="text-left">
-                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Toast Notification</h3>
-                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Feedback temporaneo.</p>
+                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Snackbar (Material)</h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Feedback con azione rapida.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Toast')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Snackbar')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
-                            <div class="flex-1 w-full flex items-center justify-center">
-                                <button id="trigger-toast" class="px-5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-lg text-sm font-semibold text-slate-800 dark:text-white shadow-sm hover:bg-slate-50 transition-colors">Mostra Notifica</button>
+                            <div class="flex-1 w-full flex flex-col items-center justify-center gap-3">
+                                <button id="trigger-toast" class="px-5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-lg text-sm font-semibold text-slate-800 dark:text-white shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-95 hover:bg-slate-50 transition-all duration-200 focus:outline-none">Mostra Toast</button>
+                                <button id="trigger-snackbar" class="px-5 py-2.5 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800/50 rounded-lg text-sm font-semibold shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200 focus:outline-none">Mostra Snackbar M3</button>
                             </div>
                             <!-- Inline Toast -->
                             <div id="toast-msg" class="absolute bottom-6 left-1/2 -translate-x-1/2 translate-y-10 scale-90 pointer-events-none opacity-0 bg-slate-900 dark:bg-slate-950 text-white dark:border dark:border-slate-700 px-4 py-3 rounded-xl shadow-xl flex items-center gap-3 text-sm transition-all duration-300 w-[90%] max-w-[250px] justify-center z-20">
                                 <div class="bg-emerald-500/20 text-emerald-500 p-1 rounded-full"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
                                 Salvataggio completato.
                             </div>
+                             <!-- Material Snackbar -->
+                             <div id="snackbar-msg" class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-20 opacity-0 pointer-events-none bg-slate-800 dark:bg-slate-100 text-slate-100 dark:text-slate-900 px-4 py-3 rounded text-sm transition-all duration-300 w-[90%] max-w-[300px] flex justify-between items-center shadow-2xl z-30">
+                                <span>File eliminato.</span>
+                                <button class="text-indigo-400 dark:text-indigo-600 font-bold uppercase tracking-wide text-xs hover:underline focus:outline-none">Annulla</button>
+                            </div>
                         </div>
 
-                        <!-- 11. Dropdown -->
+                        <!-- 11. Dropdown Menu -->
                         <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:z-50 focus-within:z-50 dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group">
                             <div class="w-full mb-4 flex justify-between items-start z-10">
                                 <div class="text-left">
-                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Menu Dropdown</h3>
+                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Dropdown Menu</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Azioni contestuali.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Dropdown Menu')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Dropdown Menu')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex items-center justify-center">
                                 <div class="relative group/menu">
-                                    <button class="flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-lg text-sm font-medium text-slate-700 dark:text-white shadow-sm hover:border-indigo-400 transition-colors">
-                                        Opzioni <svg class="w-4 h-4 text-slate-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                    <button class="flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-lg text-sm font-medium text-slate-700 dark:text-white shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-95 hover:border-indigo-400 transition-all duration-200 group focus:outline-none">
+                                        Opzioni <svg class="w-4 h-4 text-slate-400 transition-transform duration-300 group-hover/menu:-rotate-180" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                     </button>
+                                    <!-- Dropdown options -->
                                     <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-48 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xl opacity-0 translate-y-2 invisible group-hover/menu:opacity-100 group-hover/menu:visible group-hover/menu:translate-y-0 transition-all duration-200 z-[999] py-1 overflow-hidden">
-                                        <a href="javascript:void(0)" class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800"><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg> Modifica</a>
-                                        <a href="javascript:void(0)" class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800"><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg> Duplica</a>
+                                        <a href="javascript:void(0)" class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg> Modifica</a>
+                                        <a href="javascript:void(0)" class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg> Duplica</a>
                                         <div class="border-t border-slate-100 dark:border-slate-800 my-1"></div>
-                                        <a href="javascript:void(0)" class="flex items-center gap-2 px-4 py-2 text-sm text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-900/20"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg> Elimina</a>
+                                        <a href="javascript:void(0)" class="flex items-center gap-2 px-4 py-2 text-sm text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-900/20 transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg> Elimina</a>
                                     </div>
                                 </div>
                             </div>
@@ -431,14 +454,14 @@
                                     <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Multi-Select Tags</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Input con pill (Premi Invio).</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Tags Input')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Tags Input')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex flex-col justify-center">
                                 <div id="tag-container" class="border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 rounded-xl p-3 flex flex-wrap gap-2 focus-within:ring-2 focus-within:ring-indigo-500 cursor-text shadow-inner transition-shadow hover:shadow-md">
                                     <span class="tag-pill inline-flex items-center gap-1.5 px-2.5 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400 text-sm font-medium rounded-md border border-indigo-100 dark:border-indigo-800/50">
-                                        UI Design <button class="text-indigo-400 hover:text-rose-500 remove-tag focus:outline-none">&times;</button>
+                                        UI Design <button class="text-indigo-400 hover:text-rose-500 remove-tag focus:outline-none transition-colors">&times;</button>
                                     </span>
                                     <input type="text" id="tag-input" placeholder="Scrivi e premi Invio..." class="outline-none text-sm bg-transparent flex-1 min-w-[150px] text-slate-900 dark:text-white placeholder-slate-400">
                                 </div>
@@ -452,14 +475,14 @@
                                     <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Color Swatch</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Selezione visuale.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Color Selector')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Color Selector')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex items-center justify-center gap-4">
-                                <button class="color-btn w-10 h-10 rounded-full bg-rose-600 transition-all hover:scale-110 shadow-sm" data-ring-light="ring-rose-600" data-ring-dark="dark:ring-rose-500"></button>
-                                <button class="color-btn w-10 h-10 rounded-full bg-purple-600 transition-all hover:scale-110 shadow-sm" data-ring-light="ring-purple-600" data-ring-dark="dark:ring-purple-400"></button>
-                                <button class="color-btn w-10 h-10 rounded-full bg-emerald-600 transition-all hover:scale-110 shadow-sm" data-ring-light="ring-emerald-600" data-ring-dark="dark:ring-emerald-400"></button>
+                                <button class="color-btn w-10 h-10 rounded-full bg-rose-600 transition-all duration-200 hover:scale-110 shadow-sm focus:outline-none" data-ring-light="ring-rose-600" data-ring-dark="dark:ring-rose-500"></button>
+                                <button class="color-btn w-10 h-10 rounded-full bg-purple-600 transition-all duration-200 hover:scale-110 shadow-sm focus:outline-none ring-2 ring-offset-2 ring-offset-slate-50 dark:ring-offset-slate-800 ring-purple-600 dark:ring-purple-400" data-ring-light="ring-purple-600" data-ring-dark="dark:ring-purple-400"></button>
+                                <button class="color-btn w-10 h-10 rounded-full bg-emerald-600 transition-all duration-200 hover:scale-110 shadow-sm focus:outline-none" data-ring-light="ring-emerald-600" data-ring-dark="dark:ring-emerald-400"></button>
                             </div>
                         </div>
 
@@ -470,16 +493,17 @@
                                     <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Avatar & Badges</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Clicca sul +4.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Avatars')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Avatars')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex flex-col items-center justify-center">
                                 <div class="flex -space-x-3 mb-6 hover:space-x-1 transition-all duration-300">
-                                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white dark:ring-slate-900 z-30" src="https://ui-avatars.com/api/?name=S+L&background=BFA98F&color=26162B" alt="">
-                                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white dark:ring-slate-900 z-20" src="https://ui-avatars.com/api/?name=M+D&background=7A624A&color=FAF4EC" alt="">
+                                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white dark:ring-slate-900 z-30 transition-transform hover:scale-110" src="https://ui-avatars.com/api/?name=S+L&background=BFA98F&color=26162B" alt="">
+                                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white dark:ring-slate-900 z-20 transition-transform hover:scale-110" src="https://ui-avatars.com/api/?name=M+D&background=7A624A&color=FAF4EC" alt="">
                                     <div class="relative z-10">
-                                        <button id="avatar-plus-btn" aria-expanded="false" class="flex items-center justify-center h-12 w-12 rounded-full ring-2 ring-white dark:ring-slate-900 bg-slate-200 dark:bg-slate-700 text-sm font-bold text-slate-700 dark:text-slate-200 z-10 hover:bg-slate-300 relative focus:outline-none">+4</button>
+                                        <button id="avatar-plus-btn" aria-expanded="false" class="flex items-center justify-center h-12 w-12 rounded-full ring-2 ring-white dark:ring-slate-900 bg-slate-200 dark:bg-slate-700 text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 relative focus:outline-none transition-colors shadow-sm active:scale-95">+4</button>
+                                        <!-- Avatar Popover -->
                                         <div id="avatar-popover" class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-40 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xl p-2 opacity-0 invisible translate-y-2 transition-all duration-200 flex flex-col gap-1 z-[999]">
                                             <div class="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-white dark:bg-slate-900 border-l border-t border-slate-200 dark:border-slate-700 rotate-45"></div>
                                             <div class="flex items-center gap-2 p-1.5 text-xs text-slate-700 dark:text-slate-300 relative z-10"><img src="https://ui-avatars.com/api/?name=G&background=FBBF24&color=fff" class="w-5 h-5 rounded-full" alt=""> Giulia M.</div>
@@ -488,28 +512,28 @@
                                     </div>
                                 </div>
                                 <div class="flex gap-2">
-                                    <span class="px-2.5 py-1 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-400 text-xs font-semibold rounded-full border border-emerald-200 flex items-center gap-1.5"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span> Online</span>
+                                    <span class="px-2.5 py-1 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-400 text-xs font-semibold rounded-full border border-emerald-200 dark:border-emerald-800/50 flex items-center gap-1.5"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span> Online</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- 15. Tooltip -->
-                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group overflow-visible">
+                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:z-50 focus-within:z-50 dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group overflow-visible">
                             <div class="w-full mb-4 flex justify-between items-start z-10">
                                 <div class="text-left">
                                     <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Tooltip</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Informazioni al passaggio.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Tooltip')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Tooltip')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex items-center justify-center">
                                 <div class="relative group/tooltip">
-                                    <button class="px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg text-sm bg-white dark:bg-slate-900 flex items-center gap-2 hover:bg-slate-50">
+                                    <button class="px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg text-sm bg-white dark:bg-slate-900 flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm focus:outline-none transition-colors">
                                         Hover me <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                     </button>
-                                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-1.5 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs rounded-md opacity-0 translate-y-2 group-hover/tooltip:opacity-100 group-hover/tooltip:translate-y-0 transition-all z-40">
+                                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-1.5 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs rounded-md opacity-0 translate-y-2 group-hover/tooltip:opacity-100 group-hover/tooltip:translate-y-0 transition-all duration-200 z-[999] shadow-lg">
                                         Dettaglio aggiuntivo utile.
                                         <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-900 dark:border-t-slate-100"></div>
                                     </div>
@@ -524,19 +548,19 @@
                                     <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Progress Bar</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Feedback visivo.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Progress Bar')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Progress Bar')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex flex-col justify-center gap-3">
                                 <div class="flex justify-between items-center text-xs font-semibold text-slate-700 dark:text-slate-300">
                                     <span class="flex items-center gap-2">Caricamento... 
-                                        <button id="progress-play" class="text-indigo-600 hover:text-indigo-800 focus:outline-none"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg></button>
+                                        <button id="progress-play" class="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 focus:outline-none transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg></button>
                                     </span>
                                     <span id="progress-text">0%</span>
                                 </div>
-                                <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 overflow-hidden">
-                                    <div id="progress-fill" class="bg-indigo-600 dark:bg-indigo-400 h-2.5 rounded-full transition-all duration-75 ease-linear" style="width: 0%"></div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 overflow-hidden shadow-inner">
+                                    <div id="progress-fill" class="bg-indigo-600 dark:bg-indigo-500 h-2.5 rounded-full transition-all duration-75 ease-linear" style="width: 0%"></div>
                                 </div>
                             </div>
                         </div>
@@ -548,17 +572,17 @@
                                     <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Pagination</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Navigazione dataset.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Pagination')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Pagination')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex items-center justify-center">
                                 <nav class="inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination" id="pagination-nav">
-                                    <a href="javascript:void(0)" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-sm font-medium text-slate-500 hover:bg-slate-50"><span class="sr-only">Precedente</span><svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" /></svg></a>
-                                    <a href="javascript:void(0)" class="page-item relative inline-flex items-center px-4 py-2 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50">1</a>
-                                    <a href="javascript:void(0)" class="page-item active relative inline-flex items-center px-4 py-2 border border-indigo-500 bg-indigo-50 dark:bg-indigo-900/30 text-sm font-medium text-indigo-600 dark:text-indigo-400 z-10">2</a>
-                                    <a href="javascript:void(0)" class="page-item relative inline-flex items-center px-4 py-2 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50">3</a>
-                                    <a href="javascript:void(0)" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-sm font-medium text-slate-500 hover:bg-slate-50"><span class="sr-only">Successivo</span><svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" /></svg></a>
+                                    <a href="javascript:void(0)" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-sm font-medium text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"><span class="sr-only">Precedente</span><svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" /></svg></a>
+                                    <a href="javascript:void(0)" class="page-item relative inline-flex items-center px-4 py-2 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">1</a>
+                                    <a href="javascript:void(0)" class="page-item active relative inline-flex items-center px-4 py-2 border border-indigo-500 bg-indigo-50 dark:bg-indigo-900/30 text-sm font-medium text-indigo-600 dark:text-indigo-400 z-10 transition-colors">2</a>
+                                    <a href="javascript:void(0)" class="page-item relative inline-flex items-center px-4 py-2 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">3</a>
+                                    <a href="javascript:void(0)" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-sm font-medium text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"><span class="sr-only">Successivo</span><svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" /></svg></a>
                                 </nav>
                             </div>
                         </div>
@@ -570,23 +594,23 @@
                                     <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Stepper (Wizard)</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Progressione multi-step.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Stepper')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Stepper')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex flex-col items-center justify-center gap-6">
                                 <ol class="flex items-center w-full max-w-md mx-auto" id="stepper-list">
-                                    <li class="step-item flex w-full items-center text-indigo-600 after:content-[''] after:w-full after:h-1 after:border-b after:border-indigo-600 after:border-4 after:inline-block">
-                                        <span class="flex items-center justify-center w-8 h-8 bg-indigo-100 rounded-full shrink-0 font-bold"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                                    <li class="step-item flex w-full items-center text-indigo-600 after:content-[''] after:w-full after:h-1 after:border-b after:border-indigo-600 after:border-4 after:inline-block transition-colors">
+                                        <span class="flex items-center justify-center w-8 h-8 bg-indigo-100 dark:bg-indigo-900/50 rounded-full shrink-0 font-bold transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
                                     </li>
-                                    <li class="step-item active flex w-full items-center text-indigo-600 after:content-[''] after:w-full after:h-1 after:border-b after:border-slate-200 dark:after:border-slate-700 after:border-4 after:inline-block">
-                                        <span class="flex items-center justify-center w-8 h-8 bg-indigo-600 text-white rounded-full shrink-0 font-bold">2</span>
+                                    <li class="step-item active flex w-full items-center text-indigo-600 after:content-[''] after:w-full after:h-1 after:border-b after:border-slate-200 dark:after:border-slate-700 after:border-4 after:inline-block transition-colors">
+                                        <span class="flex items-center justify-center w-8 h-8 bg-indigo-600 text-white rounded-full shrink-0 font-bold shadow-sm transition-colors">2</span>
                                     </li>
-                                    <li class="step-item flex items-center text-slate-400">
-                                        <span class="flex items-center justify-center w-8 h-8 bg-slate-200 dark:bg-slate-700 rounded-full shrink-0 font-bold">3</span>
+                                    <li class="step-item flex items-center text-slate-400 transition-colors">
+                                        <span class="flex items-center justify-center w-8 h-8 bg-slate-200 dark:bg-slate-700 rounded-full shrink-0 font-bold transition-colors">3</span>
                                     </li>
                                 </ol>
-                                <button id="step-btn-next" class="px-6 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 focus:outline-none">Avanti &rarr;</button>
+                                <button id="step-btn-next" class="group px-6 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200 focus:outline-none">Avanti <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span></button>
                             </div>
                         </div>
 
@@ -597,342 +621,123 @@
                                     <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Breadcrumbs</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Navigazione gerarchica.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Breadcrumbs')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Breadcrumbs')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex items-center justify-center">
-                                <nav class="flex text-sm font-medium text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900 px-4 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700" aria-label="Breadcrumb">
+                                <nav class="flex text-sm font-medium text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900 px-4 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 shadow-sm" aria-label="Breadcrumb">
                                   <ol class="inline-flex items-center space-x-1">
-                                    <li><a href="#" class="hover:text-indigo-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg></a></li>
-                                    <li><div class="flex items-center"><svg class="w-5 h-5 text-slate-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg><span class="ml-1 text-slate-800 dark:text-slate-200">Bottoni</span></div></li>
+                                    <li><a href="#" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg></a></li>
+                                    <li><div class="flex items-center"><svg class="w-5 h-5 text-slate-300 dark:text-slate-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg><span class="ml-1 text-slate-800 dark:text-slate-200">Bottoni</span></div></li>
                                   </ol>
                                 </nav>
                             </div>
                         </div>
 
                         <!-- 20. Search Autocomplete -->
-                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group">
+                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:z-50 focus-within:z-50 dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group">
                             <div class="w-full mb-4 flex justify-between items-start z-10">
                                 <div class="text-left">
                                     <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Search Autocomplete</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Prova a scrivere 'button'.</p>
                                 </div>
-                                <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400" onclick="showDevToast('Search Autocomplete')">
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Search Autocomplete')">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </button>
                             </div>
                             <div class="flex-1 w-full flex items-center justify-center">
                                 <div class="relative w-full group/search">
-                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></div>
-                                    <input type="text" id="search-interactive" class="bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white text-sm rounded-lg focus:ring-2 focus:ring-indigo-500 w-full pl-10 p-2.5 outline-none shadow-sm" placeholder="Cerca...">
-                                    <div class="absolute top-full left-0 w-full mt-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg shadow-xl opacity-0 invisible group-focus-within/search:opacity-100 group-focus-within/search:visible transition-all z-40 overflow-hidden">
-                                        <ul id="search-results" class="text-sm text-slate-700 dark:text-slate-300">
-                                            <li class="search-item px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer">Primary Button</li>
-                                            <li class="search-item px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer">Radio Button</li>
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"><svg class="w-4 h-4 text-slate-400 transition-colors group-focus-within/search:text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></div>
+                                    <input type="text" id="search-interactive" class="bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white text-sm rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 w-full pl-10 p-2.5 outline-none shadow-sm transition-shadow" placeholder="Cerca...">
+                                    <div class="absolute top-full left-0 w-full mt-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg shadow-xl opacity-0 invisible group-focus-within/search:opacity-100 group-focus-within/search:visible transition-all duration-200 z-[999] overflow-hidden">
+                                        <ul id="search-results" class="text-sm text-slate-700 dark:text-slate-300 py-1">
+                                            <li class="search-item px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer transition-colors">Primary Button</li>
+                                            <li class="search-item px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer transition-colors">Radio Button</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- VIEW: CASI D'USO -->
-        <div id="view-casi-d-uso" class="view-section hidden animate-fade-in-up flex-1 flex flex-col">
-            <section class="py-12 px-6 sm:px-12 lg:px-24 bg-slate-100 dark:bg-slate-950 transition-colors flex-1">
-                <div class="max-w-7xl mx-auto">
-                    <div class="mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Casi Studio & Redesign (UX/A11y)</h2>
-                        <p class="text-slate-600 dark:text-slate-400 mt-4 text-lg max-w-3xl leading-relaxed">
-                            Spesso lavoro su prodotti B2B complessi (dashboard analitiche, tabelle dati, software SaaS) che nel tempo diventano sovraccarichi e difficili da usare. A causa di NDA non posso mostrare i progetti originali. Quelli che seguono <strong>sono ricostruzioni e simulazioni</strong> delle sfide di semplificazione, UX e accessibilità che affronto quotidianamente.
-                        </p>
-                    </div>
-
-                    <div class="space-y-12 pb-20">
-                    
-                        <!-- 1. Pivot Table -->
-                        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col">
-                            <div class="p-6 border-b border-slate-100 dark:border-slate-700">
-                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">1. Semplificazione Tabelle Pivot (UX Analytics)</h3>
-                                <p class="text-sm text-slate-500 dark:text-slate-400"><strong>Contesto:</strong> Le tabelle pivot del prodotto erano evitate dal 70% degli utenti a causa della loro complessità. Spesso l'utente abbandonava la piattaforma per usare Excel. <strong>Soluzione:</strong> Introduzione di una gerarchia visiva chiara (D3.js-inspired), interlinea maggiorata e controlli di filtro contestuali anziché nascosti.</p>
-                            </div>
-                            <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-700 text-sm flex-1">
-                                <div class="p-6 flex-1 bg-slate-50 dark:bg-slate-900/50 flex flex-col justify-center">
-                                    <span class="text-rose-600 font-bold mb-4">❌ Prima (Caotico & Denso)</span>
-                                    <div class="border text-[10px] bg-white p-2 flex flex-col gap-1 text-slate-400 opacity-60">
-                                        <div class="font-bold text-slate-800">Q1SalesEUR1000Q2SalesEUR2000</div>
-                                        <div>Filter:None|Sort:Asc|View:Standard</div>
-                                    </div>
+                        <!-- 21. Floating Action Button (M3) -->
+                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group">
+                            <div class="w-full mb-4 flex justify-between items-start z-10">
+                                <div class="text-left">
+                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Speed Dial (FAB)</h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Azioni primarie espandibili.</p>
                                 </div>
-                                <div class="p-6 flex-1 flex flex-col justify-center">
-                                    <span class="text-emerald-600 font-bold mb-4">✅ Dopo (Guidato & Spaziato)</span>
-                                    <div class="border rounded-lg bg-white p-3 shadow-sm">
-                                        <div class="flex justify-between items-center mb-2 border-b pb-2"><span class="font-bold text-slate-800">Sales Report (Q1)</span><button class="bg-slate-100 px-2 py-1 rounded text-xs">Filtra▾</button></div>
-                                        <div class="flex justify-between text-slate-600"><span>Europe</span><span class="font-mono">€ 1,000</span></div>
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Speed Dial FAB')">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                </button>
+                            </div>
+                            <div class="flex-1 w-full flex items-end justify-center relative pb-2">
+                                <div class="relative flex flex-col items-center group/fab">
+                                    <!-- Mini Actions -->
+                                    <div class="absolute bottom-full mb-3 flex flex-col gap-3 items-center opacity-0 translate-y-4 invisible group-hover/fab:opacity-100 group-hover/fab:visible group-hover/fab:translate-y-0 transition-all duration-300 z-10">
+                                        <button class="w-10 h-10 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-full shadow flex items-center justify-center text-indigo-600 dark:text-indigo-400 hover:scale-110 active:scale-95 transition-all"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></button>
+                                        <button class="w-10 h-10 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-full shadow flex items-center justify-center text-indigo-600 dark:text-indigo-400 hover:scale-110 active:scale-95 transition-all"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg></button>
                                     </div>
+                                    <!-- Main FAB -->
+                                    <button class="w-14 h-14 bg-indigo-600 dark:bg-indigo-500 rounded-2xl text-white shadow-lg flex items-center justify-center hover:shadow-xl hover:bg-indigo-700 dark:hover:bg-indigo-600 active:scale-95 transition-all duration-300 relative z-20 focus:outline-none">
+                                        <svg class="w-6 h-6 transition-transform duration-300 group-hover/fab:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 2. Search & Filter -->
-                        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col">
-                            <div class="p-6 border-b border-slate-100 dark:border-slate-700">
-                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">2. Search & Filters in B2B SaaS (Progressive Disclosure)</h3>
-                                <p class="text-sm text-slate-500 dark:text-slate-400"><strong>Contesto:</strong> Un'interfaccia con oltre 12 campi di ricerca fissi creava un enorme carico cognitivo ("Interface Bloat"). <strong>Soluzione:</strong> Un singolo campo di ricerca per le "Quick Search" (80% dei casi d'uso) e un sistema dinamico "Aggiungi Filtro" per le query complesse ("Progressive Disclosure"), eliminando i workaround su Excel.</p>
-                            </div>
-                            <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-700 text-sm flex-1">
-                                <div class="p-6 flex-1 bg-slate-50 dark:bg-slate-900/50 flex flex-col justify-center">
-                                    <span class="text-rose-600 font-bold mb-4">❌ Prima (Interface Bloat)</span>
-                                    <div class="grid grid-cols-2 gap-2 opacity-70">
-                                        <div class="border p-1 bg-white text-[10px]">Nome...</div><div class="border p-1 bg-white text-[10px]">Cognome...</div>
-                                        <div class="border p-1 bg-white text-[10px]">ID Ordine...</div><div class="border p-1 bg-white text-[10px]">Data...</div>
-                                        <div class="border p-1 bg-white text-[10px]">Status...</div><div class="border p-1 bg-white text-[10px]">Regione...</div>
-                                    </div>
+                        <!-- 22. Custom Controls (Radio/Check) -->
+                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[260px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[0_8px_30px_-10px_rgba(184,41,255,0.2)] relative group col-span-1 md:col-span-2">
+                            <div class="w-full mb-4 flex justify-between items-start z-10">
+                                <div class="text-left">
+                                    <h3 class="font-semibold text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-purple-400 transition-colors">Selection Controls (M3)</h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Stati e transizioni fluide.</p>
                                 </div>
-                                <div class="p-6 flex-1 flex flex-col justify-center">
-                                    <span class="text-emerald-600 font-bold mb-4">✅ Dopo (Smart Search)</span>
-                                    <div class="flex flex-col gap-2">
-                                        <div class="border-2 border-indigo-500 rounded p-2 bg-white flex justify-between text-slate-500">🔍 Cerca qualsiasi cosa...</div>
-                                        <button class="text-indigo-600 text-xs self-start font-medium">+ Aggiungi filtro avanzato</button>
-                                    </div>
-                                </div>
+                                <button class="opacity-0 group-hover:opacity-100 transition-all duration-200 p-1.5 rounded-md bg-slate-200/50 dark:bg-slate-700/50 text-slate-500 hover:text-indigo-600 dark:hover:text-purple-400 focus:outline-none" onclick="showDevToast('Selection Controls')">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                </button>
                             </div>
-                        </div>
-
-                        <!-- 3. Desktop Table (Leggibilità) -->
-                        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col">
-                            <div class="p-6 border-b border-slate-100 dark:border-slate-700">
-                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">3. Data Tables su Desktop (Allineamento e Focus)</h3>
-                                <p class="text-sm text-slate-500 dark:text-slate-400"><strong>Contesto:</strong> Le griglie dati fitte di bordi e coi numeri allineati a sinistra impedivano un rapido check visivo degli importi. <strong>Soluzione:</strong> Rimozione dei bordi verticali, utilizzo di font monospaziati per i dati finanziari e rigoroso allineamento a destra delle cifre.</p>
-                            </div>
-                            <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-700 text-sm flex-1">
-                                <div class="p-6 flex-1 bg-slate-50 dark:bg-slate-900/50 flex flex-col justify-center">
-                                    <span class="text-rose-600 font-bold mb-4">❌ Prima (Centrato & Bordato)</span>
-                                    <table class="w-full text-center border-2 border-slate-300">
-                                        <tr class="bg-slate-200"><th class="border border-slate-300 p-1">Stato</th><th class="border border-slate-300 p-1">Importo</th></tr>
-                                        <tr><td class="border border-slate-300 p-1">Paid</td><td class="border border-slate-300 p-1 text-left">€1.00</td></tr>
-                                        <tr><td class="border border-slate-300 p-1">Open</td><td class="border border-slate-300 p-1 text-left">€1000.00</td></tr>
-                                    </table>
-                                </div>
-                                <div class="p-6 flex-1 flex flex-col justify-center">
-                                    <span class="text-emerald-600 font-bold mb-4">✅ Dopo (Pulito & Monospaziato)</span>
-                                    <table class="w-full">
-                                        <tr class="border-b-2 border-slate-800 text-left"><th class="py-1 text-slate-500 font-medium">Stato</th><th class="py-1 text-right text-slate-500 font-medium">Importo</th></tr>
-                                        <tr class="border-b border-slate-200"><td class="py-2"><span class="px-2 py-0.5 bg-emerald-100 text-emerald-700 rounded-full text-[10px]">Paid</span></td><td class="py-2 text-right font-mono tabular-nums">€    1.00</td></tr>
-                                        <tr class="border-b border-slate-200"><td class="py-2"><span class="px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full text-[10px]">Open</span></td><td class="py-2 text-right font-mono tabular-nums">€ 1000.00</td></tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 4. CPQ / Carrello -->
-                        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col">
-                            <div class="p-6 border-b border-slate-100 dark:border-slate-700">
-                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">4. CPQ (Configure, Price, Quote) & Trasparenza Costi</h3>
-                                <p class="text-sm text-slate-500 dark:text-slate-400"><strong>Contesto:</strong> I processi di preventivazione B2B erano form infiniti in cui il prezzo finale veniva mostrato solo alla fine (causando Drop-off). <strong>Soluzione:</strong> Suddivisione logica dei form, scomposizione visiva delle scelte (Card invece di Select) e un carrello "Sticky" che aggiorna il Total Order Value in tempo reale.</p>
-                            </div>
-                            <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-700 text-sm flex-1">
-                                <div class="p-6 flex-1 bg-slate-50 dark:bg-slate-900/50 flex flex-col justify-center">
-                                    <span class="text-rose-600 font-bold mb-4 block">❌ Prima (Costi Nascosti)</span>
-                                    <div class="border p-2 bg-white text-slate-400 mb-2">Seleziona server... ▾</div>
-                                    <div class="border p-2 bg-white text-slate-400 mb-2">Opzioni extra... ▾</div>
-                                    <div class="bg-slate-200 p-2 text-center text-xs">Prezzo calcolato allo Step 5</div>
-                                </div>
-                                <div class="p-6 flex-1 flex flex-col justify-center">
-                                    <span class="text-emerald-600 font-bold mb-4 block">✅ Dopo (Card visive + Quote fisso)</span>
-                                    <div class="flex gap-2 h-full">
-                                        <div class="flex-1 flex flex-col gap-2">
-                                            <div class="border-2 border-indigo-500 bg-indigo-50 p-2 rounded">Plan A (+€10)</div>
-                                            <div class="border border-slate-200 p-2 rounded opacity-50">Plan B (+€30)</div>
+                            <div class="flex-1 w-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+                                
+                                <!-- Radios -->
+                                <div class="flex flex-col gap-3">
+                                    <label class="flex items-center gap-3 cursor-pointer group/radio">
+                                        <div class="relative w-5 h-5 flex items-center justify-center">
+                                            <input type="radio" name="m3-radio" class="peer sr-only" checked>
+                                            <div class="w-5 h-5 rounded-full border-2 border-slate-400 dark:border-slate-500 peer-checked:border-indigo-600 dark:peer-checked:border-indigo-400 transition-colors duration-200 group-hover/radio:border-indigo-500"></div>
+                                            <div class="absolute w-2.5 h-2.5 bg-indigo-600 dark:bg-indigo-400 rounded-full scale-0 peer-checked:scale-100 transition-transform duration-200"></div>
                                         </div>
-                                        <div class="bg-slate-800 rounded-lg text-white w-1/3 p-3 flex flex-col justify-between shadow-lg">
-                                            <div class="text-[10px] opacity-70 uppercase">Live Quote</div>
-                                            <div class="font-bold text-lg">€ 10.00</div>
+                                        <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Opzione A</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 cursor-pointer group/radio">
+                                        <div class="relative w-5 h-5 flex items-center justify-center">
+                                            <input type="radio" name="m3-radio" class="peer sr-only">
+                                            <div class="w-5 h-5 rounded-full border-2 border-slate-400 dark:border-slate-500 peer-checked:border-indigo-600 dark:peer-checked:border-indigo-400 transition-colors duration-200 group-hover/radio:border-indigo-500"></div>
+                                            <div class="absolute w-2.5 h-2.5 bg-indigo-600 dark:bg-indigo-400 rounded-full scale-0 peer-checked:scale-100 transition-transform duration-200"></div>
                                         </div>
-                                    </div>
+                                        <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Opzione B</span>
+                                    </label>
                                 </div>
-                            </div>
-                        </div>
 
-                        <!-- 5. Accessibilità Colore (WCAG) -->
-                        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col">
-                            <div class="p-6 border-b border-slate-100 dark:border-slate-700">
-                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">5. Accessibilità (Contrasto WCAG)</h3>
-                                <p class="text-sm text-slate-500 dark:text-slate-400">Risolvere problemi critici di accessibilità per utenti con disabilità visive, assicurando il superamento dei test WCAG AA (rapporto minimo 4.5:1 per testi normali).</p>
-                            </div>
-                            <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-700 text-sm flex-1">
-                                <div class="p-6 flex-1 bg-slate-50 dark:bg-slate-900/50 flex flex-col items-center justify-center">
-                                    <span class="text-rose-600 font-bold mb-4">❌ Inaccessibile (Contrast: 2.1)</span>
-                                    <button class="bg-[#93c5fd] text-[#ffffff] px-6 py-3 rounded-lg font-medium pointer-events-none shadow-sm">Acquista Ora</button>
-                                </div>
-                                <div class="p-6 flex-1 flex flex-col items-center justify-center">
-                                    <span class="text-emerald-600 font-bold mb-4">✅ Accessibile (Contrast: 7.1)</span>
-                                    <button class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium shadow-sm">Acquista Ora</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 6. Mobile Table (Card Layout) -->
-                        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col">
-                            <div class="p-6 border-b border-slate-100 dark:border-slate-700">
-                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">6. Tabelle Dati su Mobile (Card Layout)</h3>
-                                <p class="text-sm text-slate-500 dark:text-slate-400">Le tabelle orizzontali rompono la viewport dei dispositivi mobili. La trasformazione in un layout a card garantisce una UX nativa senza scroll laterali.</p>
-                            </div>
-                            <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-700 text-sm flex-1">
-                                <div class="p-6 flex-1 bg-slate-50 dark:bg-slate-900/50 overflow-hidden relative">
-                                    <span class="text-rose-600 font-bold mb-4 block">❌ Prima (Scroll Orizzontale)</span>
-                                    <div class="w-[150%] border bg-white p-2 opacity-50 blur-[1px]">ID | Nome Cliente | Data | Status | Importo</div>
-                                </div>
-                                <div class="p-6 flex-1">
-                                    <span class="text-emerald-600 font-bold mb-4 block">✅ Dopo (Card View)</span>
-                                    <div class="border border-slate-200 rounded-xl p-4 bg-white dark:bg-slate-900 shadow-sm">
-                                        <div class="flex justify-between items-center mb-1"><strong class="text-slate-800 dark:text-white">Marco Rossi</strong><span class="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded text-xs font-bold">Spedito</span></div>
-                                        <div class="text-xs text-slate-500 mb-2">ID: #9932 • 12 Set 2026</div>
-                                        <div class="pt-2 border-t border-slate-100 dark:border-slate-700 font-bold text-indigo-600 dark:text-indigo-400">€ 149.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 7. Data Visualization -->
-                        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col">
-                            <div class="p-6 border-b border-slate-100 dark:border-slate-700">
-                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">7. Data Visualization (Leggibilità)</h3>
-                                <p class="text-sm text-slate-500 dark:text-slate-400">L'occhio umano fatica a calcolare l'area dei grafici a torta. I grafici a barre permettono una comparazione immediata delle lunghezze.</p>
-                            </div>
-                            <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-700 text-sm flex-1">
-                                <div class="p-6 flex-1 bg-slate-50 dark:bg-slate-900/50 flex flex-col justify-center">
-                                    <span class="text-rose-600 font-bold mb-4">❌ Prima (Torta confusa)</span>
-                                    <div class="w-20 h-20 rounded-full mx-auto opacity-80 shadow-inner" style="background: conic-gradient(#A68D70 33%, #5C4631 33% 66%, #26162B 66%);"></div>
-                                </div>
-                                <div class="p-6 flex-1 flex flex-col justify-center gap-3">
-                                    <span class="text-emerald-600 font-bold mb-2">✅ Dopo (Barre orizzontali)</span>
-                                    <div><div class="text-xs mb-1 text-slate-600">Prodotto A (66%)</div><div class="h-3 bg-indigo-600 w-[66%] rounded-full"></div></div>
-                                    <div><div class="text-xs mb-1 text-slate-600">Prodotto B (33%)</div><div class="h-3 bg-indigo-300 w-[33%] rounded-full"></div></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 8. Form Validation -->
-                        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col">
-                            <div class="p-6 border-b border-slate-100 dark:border-slate-700">
-                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">8. Validazione Form Contestuale</h3>
-                                <p class="text-sm text-slate-500 dark:text-slate-400">Evitare di mostrare gli errori solo alla fine del form (submit) e fornire invece un feedback "inline" e contestuale esattamente dove l'utente ha commesso l'errore.</p>
-                            </div>
-                            <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-700 text-sm flex-1">
-                                <div class="p-6 flex-1 bg-slate-50 dark:bg-slate-900/50 flex flex-col justify-center">
-                                    <span class="text-rose-600 font-bold mb-4">❌ Prima</span>
-                                    <div class="bg-rose-100 border border-rose-200 text-rose-800 p-3 rounded-lg mb-3 shadow-sm">Errore generico nel modulo.</div>
-                                    <input type="text" class="border p-2 rounded bg-white w-full" value="mario@">
-                                </div>
-                                <div class="p-6 flex-1 flex flex-col justify-center">
-                                    <span class="text-emerald-600 font-bold mb-4">✅ Dopo (Inline)</span>
-                                    <div class="relative w-full">
-                                        <input type="text" class="border-2 border-rose-500 bg-rose-50 dark:bg-rose-900/20 text-slate-800 dark:text-white p-2 rounded w-full pr-8" value="mario@">
-                                        <svg class="w-5 h-5 text-rose-500 absolute right-2 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                    </div>
-                                    <p class="text-xs text-rose-600 font-medium mt-1">L'email deve includere un dominio valido.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 9. Empty States -->
-                        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col">
-                            <div class="p-6 border-b border-slate-100 dark:border-slate-700">
-                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">9. Empty States (Azione vs Vicolo Cieco)</h3>
-                                <p class="text-sm text-slate-500 dark:text-slate-400">Una schermata vuota non deve mai essere un limite, ma un'opportunità di "Onboarding". Aggiungere una chiara "Call to Action" aiuta l'utente a iniziare ad usare il software.</p>
-                            </div>
-                            <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-700 text-sm flex-1">
-                                <div class="p-6 flex-1 bg-slate-50 flex flex-col justify-center text-center">
-                                    <span class="text-rose-600 font-bold mb-6 text-left block">❌ Prima (Vicolo cieco)</span>
-                                    <div class="text-slate-400 font-medium py-8 border-2 border-dashed border-slate-300 rounded-xl">Nessun progetto trovato.</div>
-                                </div>
-                                <div class="p-6 flex-1 flex flex-col justify-center items-center text-center">
-                                    <span class="text-emerald-600 font-bold mb-6 text-left block w-full">✅ Dopo (Call to Action)</span>
-                                    <div class="py-6 border-2 border-dashed border-indigo-200 rounded-xl w-full flex flex-col items-center gap-3">
-                                        <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-500"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M12 4v16m8-8H4"></path></svg></div>
-                                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg font-medium shadow-sm transition-colors">Nuovo Progetto</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 10. Dark Patterns -->
-                        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col">
-                            <div class="p-6 border-b border-slate-100 dark:border-slate-700">
-                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">10. Evitare i Dark Patterns (Etica e GDPR)</h3>
-                                <p class="text-sm text-slate-500 dark:text-slate-400">Disegnare per spingere un'azione manipolatoria distrugge la fiducia. Fornire scelte paritarie e chiare, specialmente nei consensi (Cookie), è essenziale.</p>
-                            </div>
-                            <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-700 text-sm flex-1">
-                                <div class="p-6 flex-1 bg-slate-50 flex flex-col justify-center">
-                                    <span class="text-rose-600 font-bold mb-4 block">❌ Prima (Manipolatorio)</span>
-                                    <div class="bg-white p-4 border shadow-sm rounded flex flex-col gap-2">
-                                        <button class="bg-indigo-600 text-white p-2 rounded w-full font-bold">ACCETTA TUTTO</button>
-                                        <a href="#" class="text-[10px] text-slate-400 text-center underline">Gestisci minuziosamente le preferenze nascoste</a>
-                                    </div>
-                                </div>
-                                <div class="p-6 flex-1 flex flex-col justify-center">
-                                    <span class="text-emerald-600 font-bold mb-4 block">✅ Dopo (Scelte Paritarie)</span>
-                                    <div class="bg-white dark:bg-slate-900 p-4 border border-slate-200 dark:border-slate-700 shadow-sm rounded flex gap-3">
-                                        <button class="flex-1 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-white p-2 rounded font-medium hover:bg-slate-50">Rifiuta</button>
-                                        <button class="flex-1 bg-indigo-600 text-white p-2 rounded font-medium hover:bg-indigo-700 shadow-sm">Accetta</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 11. Touch Targets -->
-                        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col">
-                            <div class="p-6 border-b border-slate-100 dark:border-slate-700">
-                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">11. A11y: Touch Targets su Mobile</h3>
-                                <p class="text-sm text-slate-500 dark:text-slate-400">Garantire un'area cliccabile minima di 44x44px per evitare il "Fat Finger Error" sui touchscreen.</p>
-                            </div>
-                            <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-700 text-sm flex-1">
-                                <div class="p-6 flex-1 bg-slate-50 flex items-center justify-center flex-col relative">
-                                    <span class="text-rose-600 font-bold mb-6 w-full">❌ Prima (Troppo vicini)</span>
-                                    <div class="text-slate-600">
-                                        <a href="#" class="hover:text-indigo-600 underline">Modifica</a> | <a href="#" class="hover:text-rose-600 underline">Elimina</a>
-                                    </div>
-                                    <div class="absolute w-8 h-8 rounded-full bg-rose-500/30 animate-ping z-0 top-[60%] pointer-events-none"></div>
-                                </div>
-                                <div class="p-6 flex-1 flex flex-col items-center justify-center">
-                                    <span class="text-emerald-600 font-bold mb-6 w-full">✅ Dopo (Minimo 44px + Spazio)</span>
-                                    <div class="flex gap-4">
-                                        <button class="px-5 py-3 border border-slate-300 rounded-lg bg-white shadow-sm font-medium text-slate-700 hover:border-indigo-500">Modifica</button>
-                                        <button class="px-5 py-3 border border-rose-200 rounded-lg bg-rose-50 text-rose-700 shadow-sm font-medium hover:bg-rose-100">Elimina</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 12. Pricing Hierarchy -->
-                        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col">
-                            <div class="p-6 border-b border-slate-100 dark:border-slate-700">
-                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">12. Gerarchia Visiva (Pricing e Conversioni)</h3>
-                                <p class="text-sm text-slate-500 dark:text-slate-400">Per guidare l'utente verso il piano più redditizio, bisogna creare una forte asimmetria visiva (Highlight), evitando design piatti che disorientano.</p>
-                            </div>
-                            <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-700 text-sm flex-1">
-                                <div class="p-6 flex-1 bg-slate-50 flex flex-col justify-center">
-                                    <span class="text-rose-600 font-bold mb-6">❌ Prima (Design Piatto)</span>
-                                    <div class="flex gap-4">
-                                        <div class="border p-4 bg-white flex-1 rounded text-center opacity-70">Piano Base<br>€ 9</div>
-                                        <div class="border p-4 bg-white flex-1 rounded text-center opacity-70">Piano Pro<br>€ 29</div>
-                                    </div>
-                                </div>
-                                <div class="p-6 flex-1 flex flex-col justify-center">
-                                    <span class="text-emerald-600 font-bold mb-6">✅ Dopo (Highlight Strategico)</span>
-                                    <div class="flex gap-2 items-center">
-                                        <div class="border border-slate-200 p-3 bg-white flex-1 rounded-lg text-center text-slate-500 text-xs">Piano Base<br>€ 9</div>
-                                        <div class="border-2 border-indigo-500 bg-indigo-50 dark:bg-indigo-900/20 p-5 flex-1 rounded-xl text-center shadow-lg font-bold text-indigo-700 dark:text-indigo-400 scale-105 transform relative z-10">
-                                            <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-[9px] px-2 py-0.5 rounded-full uppercase tracking-wider">Consigliato</span>
-                                            Piano Pro<br>€ 29
+                                <!-- Checkboxes -->
+                                <div class="flex flex-col gap-3">
+                                    <label class="flex items-center gap-3 cursor-pointer group/check">
+                                        <div class="relative w-5 h-5 flex items-center justify-center">
+                                            <input type="checkbox" class="peer sr-only" checked>
+                                            <div class="w-5 h-5 rounded border-2 border-slate-400 dark:border-slate-500 peer-checked:bg-emerald-600 peer-checked:border-emerald-600 dark:peer-checked:bg-emerald-500 dark:peer-checked:border-emerald-500 transition-all duration-200 group-hover/check:border-emerald-500"></div>
+                                            <svg class="absolute w-3.5 h-3.5 text-white scale-0 peer-checked:scale-100 transition-transform duration-200 delay-75" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                                         </div>
-                                    </div>
+                                        <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Ricordami</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 cursor-pointer opacity-50">
+                                        <div class="relative w-5 h-5 flex items-center justify-center">
+                                            <input type="checkbox" class="peer sr-only" disabled>
+                                            <div class="w-5 h-5 rounded border-2 border-slate-300 dark:border-slate-600"></div>
+                                        </div>
+                                        <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Disabilitato</span>
+                                    </label>
                                 </div>
+
                             </div>
                         </div>
 
@@ -953,11 +758,11 @@
                         <p class="text-slate-400 text-lg md:text-xl max-w-xl mx-auto leading-relaxed">Cerchi supporto per ottimizzare la UX o creare un Design System coerente? Scrivimi.</p>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center mt-6 w-full sm:w-auto">
-                        <a href="mailto:robboroby202@gmail.com" class="flex items-center justify-center gap-2 px-8 py-4 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-all shadow-lg hover:-translate-y-1">
+                        <a href="mailto:robboroby202@gmail.com" class="flex items-center justify-center gap-2 px-8 py-4 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-all shadow-lg hover:-translate-y-1 focus:outline-none active:scale-95">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                             robboroby202@gmail.com
                         </a>
-                        <a href="https://www.linkedin.com/in/roberto-rosa-0404/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 px-8 py-4 bg-slate-700/80 text-white font-semibold rounded-xl hover:bg-slate-600 transition-all shadow-lg hover:-translate-y-1 backdrop-blur-sm border border-slate-600">
+                        <a href="https://www.linkedin.com/in/roberto-rosa-0404/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 px-8 py-4 bg-slate-700/80 text-white font-semibold rounded-xl hover:bg-slate-600 transition-all shadow-lg hover:-translate-y-1 backdrop-blur-sm border border-slate-600 focus:outline-none active:scale-95">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                             Profilo LinkedIn
                         </a>
@@ -971,13 +776,17 @@
     <footer class="bg-slate-50 dark:bg-slate-950 py-8 px-6 text-center text-slate-500 text-sm font-medium border-t border-slate-200 dark:border-slate-800 transition-colors duration-500 z-10 relative mt-auto">
         <div class="max-w-7xl mx-auto">
             <p class="mb-2" data-i18n="footer_copy">&copy; 2026 Roberto R. Progettato con cura. (Temi: Autunno 🍂 / Halloween 🎃)</p>
-            <p class="text-indigo-600 dark:text-indigo-500 text-xs font-mono font-bold tracking-widest mt-3">v1.3.0 &bull; Ultimo aggiornamento: 9 Settembre 2026</p>
+            <p class="text-indigo-600 dark:text-indigo-500 text-xs font-mono font-bold tracking-widest mt-3 transition-colors">v1.3.4 &bull; Ultimo aggiornamento: 9 Settembre 2026</p>
+            <div class="mt-4 flex justify-center gap-4">
+                 <a href="mailto:robboroby202@gmail.com" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-1.5 focus:outline-none"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg> Email</a>
+                 <a href="https://www.linkedin.com/in/roberto-rosa-0404/" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-1.5 focus:outline-none"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg> LinkedIn</a>
+            </div>
         </div>
     </footer>
 
     <!-- Global Dev Toast -->
     <div id="dev-toast" class="fixed bottom-6 right-6 translate-y-20 opacity-0 pointer-events-none bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 text-sm transition-all duration-300 z-[9999]">
-        <div class="bg-indigo-500/20 text-indigo-400 p-1.5 rounded-full"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2-2v8a2 2 0 002 2z"></path></svg></div>
+        <div class="bg-indigo-500/20 text-indigo-400 dark:text-indigo-600 p-1.5 rounded-full"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2-2v8a2 2 0 002 2z"></path></svg></div>
         <div>Copiato snippet per: <strong id="dev-toast-name">Component</strong></div>
     </div>
 
@@ -990,6 +799,11 @@
                 clearTimeout(devToastTimeout);
                 toastName.textContent = componentName;
                 toast.classList.remove('opacity-0', 'translate-y-20', 'pointer-events-none');
+                
+                // Add a small bounce effect
+                toast.classList.add('scale-105');
+                setTimeout(() => toast.classList.remove('scale-105'), 200);
+
                 devToastTimeout = setTimeout(() => {
                     toast.classList.add('opacity-0', 'translate-y-20', 'pointer-events-none');
                 }, 3000);
@@ -1036,9 +850,9 @@
                 });
                 langOptions.forEach(btn => {
                     if (btn.getAttribute('data-lang') === lang) {
-                        btn.className = "w-full text-left px-4 py-2 text-sm text-indigo-600 dark:text-indigo-400 font-bold bg-slate-50 dark:bg-slate-800 lang-option";
+                        btn.className = "w-full text-left px-4 py-2 text-sm text-indigo-600 dark:text-indigo-400 font-bold bg-slate-50 dark:bg-slate-800 lang-option transition-colors duration-200 hover:bg-slate-100 dark:hover:bg-slate-700";
                     } else {
-                        btn.className = "w-full text-left px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 lang-option";
+                        btn.className = "w-full text-left px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 lang-option transition-colors duration-200";
                     }
                 });
             };
@@ -1168,8 +982,16 @@
                     }
                 });
                 viewSections.forEach(view => {
-                    if(view.id === targetId) view.classList.remove('hidden');
-                    else view.classList.add('hidden');
+                    if(view.id === targetId) {
+                        view.classList.remove('hidden');
+                        // Add fade up animation class if it doesn't exist
+                        if(!view.classList.contains('animate-fade-in-up')) {
+                           view.classList.add('animate-fade-in-up');
+                        }
+                    } else {
+                        view.classList.add('hidden');
+                        view.classList.remove('animate-fade-in-up');
+                    }
                 });
             };
 
@@ -1182,8 +1004,14 @@
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                     mainTabBtns.forEach(navBtn => { navBtn.classList.add(...inactiveClasses); navBtn.classList.remove(...activeClasses); });
                     viewSections.forEach(view => {
-                        if(view.id === 'view-intro') view.classList.remove('hidden');
-                        else view.classList.add('hidden');
+                        if(view.id === 'view-intro') {
+                             view.classList.remove('hidden');
+                             view.classList.add('animate-fade-in-up');
+                        }
+                        else {
+                            view.classList.add('hidden');
+                            view.classList.remove('animate-fade-in-up');
+                        }
                     });
                 });
             }
@@ -1283,13 +1111,15 @@
             if(starContainer) {
                 for(let i = 1; i <= 5; i++) {
                     const starBtn = document.createElement('button');
-                    starBtn.className = 'text-slate-300 dark:text-slate-600 hover:text-amber-600 dark:hover:text-amber-400 focus:outline-none p-1 group';
-                    starBtn.innerHTML = `<svg class="w-7 h-7 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>`;
+                    starBtn.className = 'text-slate-300 dark:text-slate-600 hover:text-amber-600 dark:hover:text-amber-400 focus:outline-none p-1 group transition-colors';
+                    starBtn.innerHTML = `<svg class="w-7 h-7 fill-current group-hover:scale-110 transition-transform duration-200" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>`;
                     starContainer.appendChild(starBtn);
                     starBtn.addEventListener('click', () => {
                         Array.from(starContainer.children).forEach((btn, index) => {
                             btn.classList.toggle('text-amber-600', index < i); 
                             btn.classList.toggle('text-slate-300', index >= i); 
+                            btn.classList.toggle('dark:text-amber-400', index < i); 
+                            btn.classList.toggle('dark:text-slate-600', index >= i); 
                         });
                     });
                 }
@@ -1324,10 +1154,14 @@
                 });
             }
 
-            // 10. Toast
+            // 10. Toast & Snackbar
             const triggerToast = document.getElementById('trigger-toast');
             const toastMsg = document.getElementById('toast-msg');
+            const triggerSnackbar = document.getElementById('trigger-snackbar');
+            const snackbarMsg = document.getElementById('snackbar-msg');
             let uiToastTimeout;
+            let uiSnackbarTimeout;
+            
             if(triggerToast && toastMsg) {
                 triggerToast.addEventListener('click', () => {
                     clearTimeout(uiToastTimeout);
@@ -1338,6 +1172,27 @@
                         toastMsg.classList.remove('opacity-100', 'translate-y-0', 'scale-100');
                     }, 3000);
                 });
+            }
+            if(triggerSnackbar && snackbarMsg) {
+                triggerSnackbar.addEventListener('click', () => {
+                    clearTimeout(uiSnackbarTimeout);
+                    snackbarMsg.classList.remove('opacity-0', 'translate-y-20', 'pointer-events-none');
+                    snackbarMsg.classList.add('opacity-100', 'translate-y-0');
+                    uiSnackbarTimeout = setTimeout(() => {
+                        snackbarMsg.classList.add('opacity-0', 'translate-y-20', 'pointer-events-none');
+                        snackbarMsg.classList.remove('opacity-100', 'translate-y-0');
+                    }, 4000);
+                });
+                
+                // Snackbar Action
+                const snackbarAction = snackbarMsg.querySelector('button');
+                if(snackbarAction) {
+                    snackbarAction.addEventListener('click', () => {
+                         clearTimeout(uiSnackbarTimeout);
+                         snackbarMsg.classList.add('opacity-0', 'translate-y-20', 'pointer-events-none');
+                         snackbarMsg.classList.remove('opacity-100', 'translate-y-0');
+                    });
+                }
             }
 
             // 12. Tags
@@ -1355,7 +1210,7 @@
                         const val = tagInput.value.trim();
                         const newTag = document.createElement('span');
                         newTag.className = 'tag-pill inline-flex items-center gap-1.5 px-2.5 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400 text-sm font-medium rounded-md border border-indigo-100 dark:border-indigo-800/50';
-                        newTag.innerHTML = `${val} <button class="text-indigo-400 hover:text-rose-500 remove-tag focus:outline-none">&times;</button>`;
+                        newTag.innerHTML = `${val} <button class="text-indigo-400 hover:text-rose-500 remove-tag focus:outline-none transition-colors">&times;</button>`;
                         tagContainer.insertBefore(newTag, tagInput);
                         tagInput.value = '';
                     }
@@ -1370,11 +1225,15 @@
                         colorBtns.forEach(b => {
                             b.classList.remove('ring-2', 'ring-offset-2', 'ring-offset-slate-50', 'dark:ring-offset-slate-800');
                             const ringLight = b.getAttribute('data-ring-light');
+                            const ringDark = b.getAttribute('data-ring-dark');
                             if(ringLight) b.classList.remove(ringLight);
+                            if(ringDark) b.classList.remove(ringDark);
                         });
                         const activeRingLight = btn.getAttribute('data-ring-light');
+                        const activeRingDark = btn.getAttribute('data-ring-dark');
                         btn.classList.add('ring-2', 'ring-offset-2', 'ring-offset-slate-50', 'dark:ring-offset-slate-800');
                         if(activeRingLight) btn.classList.add(activeRingLight);
+                        if(activeRingDark) btn.classList.add(activeRingDark);
                     });
                 });
             }
@@ -1434,9 +1293,9 @@
                 pageItems.forEach(item => {
                     item.addEventListener('click', (e) => {
                         pageItems.forEach(p => {
-                            p.className = 'page-item relative inline-flex items-center px-4 py-2 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50';
+                            p.className = 'page-item relative inline-flex items-center px-4 py-2 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors';
                         });
-                        e.target.className = 'page-item active relative inline-flex items-center px-4 py-2 border border-indigo-500 bg-indigo-50 dark:bg-indigo-900/30 text-sm font-medium text-indigo-600 dark:text-indigo-400 z-10';
+                        e.target.className = 'page-item active relative inline-flex items-center px-4 py-2 border border-indigo-500 bg-indigo-50 dark:bg-indigo-900/30 text-sm font-medium text-indigo-600 dark:text-indigo-400 z-10 transition-colors';
                     });
                 });
             }
@@ -1453,19 +1312,19 @@
                     stepItems.forEach((item, index) => {
                         const stepNum = index + 1;
                         const span = item.querySelector('span');
-                        item.className = 'step-item flex w-full items-center'; 
+                        item.className = 'step-item flex w-full items-center transition-colors'; 
                         
                         if(stepNum < currentStep) {
                             item.classList.add('text-indigo-600', 'after:content-[""]', 'after:w-full', 'after:h-1', 'after:border-b', 'after:border-indigo-600', 'after:border-4');
-                            span.className = 'flex items-center justify-center w-8 h-8 bg-indigo-100 rounded-full shrink-0 font-bold';
+                            span.className = 'flex items-center justify-center w-8 h-8 bg-indigo-100 dark:bg-indigo-900/50 rounded-full shrink-0 font-bold transition-colors';
                             span.innerHTML = `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>`;
                         } else if(stepNum === currentStep) {
                             item.classList.add('text-indigo-600', 'active', 'after:content-[""]', 'after:w-full', 'after:h-1', 'after:border-b', 'after:border-slate-200', 'dark:after:border-slate-700', 'after:border-4');
-                            span.className = 'flex items-center justify-center w-8 h-8 bg-indigo-600 text-white rounded-full shrink-0 font-bold';
+                            span.className = 'flex items-center justify-center w-8 h-8 bg-indigo-600 text-white rounded-full shrink-0 font-bold shadow-sm transition-colors';
                             span.innerHTML = stepNum;
                         } else {
                             item.classList.add('text-slate-400', 'after:content-[""]', 'after:w-full', 'after:h-1', 'after:border-b', 'after:border-slate-200', 'dark:after:border-slate-700', 'after:border-4');
-                            span.className = 'flex items-center justify-center w-8 h-8 bg-slate-200 dark:bg-slate-700 rounded-full shrink-0 font-bold';
+                            span.className = 'flex items-center justify-center w-8 h-8 bg-slate-200 dark:bg-slate-700 rounded-full shrink-0 font-bold transition-colors';
                             span.innerHTML = stepNum;
                             if(stepNum === 3) item.classList.remove('after:content-[""]', 'after:border-b', 'after:border-4', 'w-full');
                         }
@@ -1473,10 +1332,10 @@
                     
                     if(currentStep === 3) {
                         stepBtnNext.innerHTML = 'Completa';
-                        stepBtnNext.className = 'px-6 py-2 bg-indigo-600 text-white rounded-lg text-sm font-semibold focus:outline-none';
+                        stepBtnNext.className = 'px-6 py-2 bg-indigo-600 dark:bg-indigo-500 text-white rounded-lg text-sm font-semibold focus:outline-none transition-colors active:scale-95 shadow-sm';
                     } else {
-                        stepBtnNext.innerHTML = 'Avanti &rarr;';
-                        stepBtnNext.className = 'px-6 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 focus:outline-none';
+                        stepBtnNext.innerHTML = 'Avanti <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>';
+                        stepBtnNext.className = 'group px-6 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200 focus:outline-none';
                     }
                 });
             }
