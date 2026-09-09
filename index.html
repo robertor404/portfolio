@@ -48,6 +48,12 @@
         body.a11y-no-motion * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
         body.a11y-protanopia { filter: url('#protanopia-filter'); }
         body.a11y-deuteranopia { filter: url('#deuteranopia-filter'); }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up { animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-white antialiased transition-colors duration-500 min-h-screen flex flex-col">
@@ -69,10 +75,10 @@
             
             <!-- Center: Segmented Control Tabs -->
             <div class="flex items-center justify-center w-full md:w-1/3 order-3 md:order-none">
-                <div class="flex p-1 bg-slate-200/70 dark:bg-slate-800/70 rounded-full space-x-1 text-sm font-semibold whitespace-nowrap border border-slate-300/50 dark:border-slate-700/50 shadow-inner" id="main-nav">
-                    <button data-target="view-componenti" data-i18n="nav_comp" class="main-tab-btn px-5 py-2 rounded-full transition-all duration-300 focus:outline-none text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-slate-700/50">Componenti</button>
-                    <button data-target="view-casi-d-uso" data-i18n="nav_cases" class="main-tab-btn px-5 py-2 rounded-full transition-all duration-300 focus:outline-none text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-slate-700/50">Casi d'Uso</button>
-                    <button data-target="view-contatti" data-i18n="nav_contact" class="main-tab-btn px-5 py-2 rounded-full transition-all duration-300 focus:outline-none text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-slate-700/50">Contatti</button>
+                <div class="flex p-1 bg-slate-200/70 dark:bg-slate-800/70 rounded-full space-x-1 text-sm font-semibold whitespace-nowrap border border-slate-300/50 dark:border-slate-700/50 shadow-inner group-hover:scale-105 transition-transform duration-300" id="main-nav">
+                    <button data-target="view-componenti" data-i18n="nav_comp" class="main-tab-btn px-5 py-2 rounded-full transition-all duration-300 focus:outline-none text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-slate-700/50 hover:-translate-y-1 hover:shadow-sm">Componenti</button>
+                    <button data-target="view-casi-d-uso" data-i18n="nav_cases" class="main-tab-btn px-5 py-2 rounded-full transition-all duration-300 focus:outline-none text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-slate-700/50 hover:-translate-y-1 hover:shadow-sm">Casi d'Uso</button>
+                    <button data-target="view-contatti" data-i18n="nav_contact" class="main-tab-btn px-5 py-2 rounded-full transition-all duration-300 focus:outline-none text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-slate-700/50 hover:-translate-y-1 hover:shadow-sm">Contatti</button>
                 </div>
             </div>
 
@@ -81,11 +87,11 @@
                 
                 <!-- Language Menu -->
                 <div class="relative group/ctrl" id="lang-dropdown">
-                    <button class="p-2 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500" aria-label="Cambia Lingua" id="lang-btn">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <button class="p-2 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-indigo-500" aria-label="Cambia Lingua" id="lang-btn">
+                        <svg class="w-5 h-5 transition-transform duration-300 group-hover/ctrl:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </button>
-                    <div class="absolute top-full right-0 mt-2 w-32 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover/ctrl:opacity-100 group-hover/ctrl:visible transition-all duration-200 overflow-hidden py-1">
-                        <button class="w-full text-left px-4 py-2 text-sm text-indigo-600 dark:text-indigo-400 font-bold bg-slate-50 dark:bg-slate-800 lang-option" data-lang="it">🇮🇹 Italiano</button>
+                    <div class="absolute top-full right-0 mt-2 w-32 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover/ctrl:opacity-100 group-hover/ctrl:visible transition-all duration-200 overflow-hidden py-1 transform origin-top-right scale-95 group-hover/ctrl:scale-100">
+                        <button class="w-full text-left px-4 py-2 text-sm text-indigo-600 dark:text-indigo-400 font-bold bg-slate-50 dark:bg-slate-800 lang-option transition-colors duration-200" data-lang="it">🇮🇹 Italiano</button>
                         <button class="w-full text-left px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 lang-option" data-lang="en">🇬🇧 English</button>
                         <button class="w-full text-left px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 lang-option" data-lang="es">🇪🇸 Español</button>
                     </div>
@@ -93,11 +99,11 @@
 
                 <!-- A11y Menu -->
                 <div class="relative group/ctrl" id="a11y-dropdown">
-                    <button class="p-2 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 relative" aria-label="Accessibilità" id="a11y-btn">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-                        <span id="a11y-indicator" class="hidden absolute top-0 right-0 w-2.5 h-2.5 bg-indigo-500 rounded-full border-2 border-white dark:border-slate-900"></span>
+                    <button class="p-2 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-indigo-500 relative" aria-label="Accessibilità" id="a11y-btn">
+                        <svg class="w-5 h-5 transition-transform duration-300 group-hover/ctrl:-rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                        <span id="a11y-indicator" class="hidden absolute top-0 right-0 w-2.5 h-2.5 bg-indigo-500 rounded-full border-2 border-white dark:border-slate-900 transition-transform duration-300 scale-100"></span>
                     </button>
-                    <div class="absolute top-full right-0 mt-2 w-56 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover/ctrl:opacity-100 group-hover/ctrl:visible transition-all duration-200 overflow-hidden py-2 px-1">
+                    <div class="absolute top-full right-0 mt-2 w-56 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover/ctrl:opacity-100 group-hover/ctrl:visible transition-all duration-200 overflow-hidden py-2 px-1 transform origin-top-right scale-95 group-hover/ctrl:scale-100">
                         <div class="px-3 pb-2 mb-2 border-b border-slate-100 dark:border-slate-800 text-xs font-bold text-slate-400 uppercase tracking-wider" data-i18n="a11y_title">Accessibilità</div>
                         
                         <button class="a11y-toggle w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800" data-feature="a11y-large-text">
@@ -126,11 +132,11 @@
                 </div>
 
                 <!-- Theme Toggle -->
-                <button id="theme-toggle" role="switch" aria-checked="false" class="relative inline-flex h-8 w-16 items-center rounded-full bg-slate-300 dark:bg-slate-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-slate-50 dark:focus:ring-offset-slate-900 shrink-0 ring-1 ring-inset ring-slate-400/50 dark:ring-slate-600/50 shadow-inner" aria-label="Toggle Dark Mode">
+                <button id="theme-toggle" role="switch" aria-checked="false" class="group relative inline-flex h-8 w-16 items-center rounded-full bg-slate-300 dark:bg-slate-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-slate-50 dark:focus:ring-offset-slate-900 shrink-0 ring-1 ring-inset ring-slate-400/50 dark:ring-slate-600/50 shadow-inner hover:scale-110" aria-label="Toggle Dark Mode">
                     <span class="sr-only">Attiva Modalità Scura</span>
-                    <span id="theme-toggle-knob" class="flex items-center justify-center h-6 w-6 translate-x-1 rounded-full bg-white dark:bg-slate-900 shadow-sm transition-transform duration-300">
-                        <span id="icon-autumn" class="text-sm leading-none transition-opacity duration-200">🍂</span>
-                        <span id="icon-halloween" class="absolute text-sm leading-none opacity-0 transition-opacity duration-200">🎃</span>
+                    <span id="theme-toggle-knob" class="flex items-center justify-center h-6 w-6 translate-x-1 rounded-full bg-white dark:bg-slate-900 shadow-sm transition-transform duration-300 group-hover:rotate-12 group-hover:shadow-md group-hover:scale-110">
+                        <span id="icon-autumn" class="text-sm leading-none transition-opacity duration-200 group-hover:animate-bounce">🍂</span>
+                        <span id="icon-halloween" class="absolute text-sm leading-none opacity-0 transition-opacity duration-200 group-hover:animate-bounce">🎃</span>
                     </span>
                 </button>
             </div>
@@ -141,13 +147,13 @@
     <main class="flex-1 flex flex-col relative">
         
         <!-- VIEW: INTRO -->
-        <div id="view-intro" class="view-section animate-[fadeIn_0.3s_ease-out] flex-1 flex flex-col justify-center">
+        <div id="view-intro" class="view-section animate-fade-in-up flex-1 flex flex-col justify-center">
             <section class="py-12 sm:py-20 px-6 sm:px-12 lg:px-24 max-w-7xl mx-auto flex flex-col items-center justify-center text-center min-h-[75vh]">
-                <span class="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-indigo-100 dark:bg-purple-900/30 text-indigo-700 dark:text-purple-400 ring-1 ring-inset ring-indigo-700/20 dark:ring-purple-400/30 mb-6 transition-colors shadow-sm" data-i18n="hero_badge">
+                <span class="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-indigo-100 dark:bg-purple-900/30 text-indigo-700 dark:text-purple-400 ring-1 ring-inset ring-indigo-700/20 dark:ring-purple-400/30 mb-6 transition-colors shadow-sm hover:scale-105 duration-300" data-i18n="hero_badge">
                     Product & UX Designer
                 </span>
                 <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight transition-colors">
-                    <span data-i18n="hero_title_1">Design che </span><span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400" data-i18n="hero_title_highlight">funziona</span>,<br><span data-i18n="hero_title_2">non solo bello da vedere.</span>
+                    <span data-i18n="hero_title_1">Design che </span><span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 hover:from-purple-600 hover:to-indigo-600 transition-all duration-700" data-i18n="hero_title_highlight">funziona</span>,<br><span data-i18n="hero_title_2">non solo bello da vedere.</span>
                 </h1>
                 <p class="text-xl text-slate-600 dark:text-slate-400 mb-16 max-w-3xl leading-relaxed transition-colors" data-i18n="hero_desc">
                     Sono Roberto R., specializzato in UX/UI, Design Systems e <strong class="font-semibold text-slate-900 dark:text-slate-200">Accessibilità (A11y)</strong>.
@@ -156,30 +162,30 @@
                 <h2 class="text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-8" data-i18n="hero_ask">Cosa vorresti esplorare?</h2>
                 
                 <div class="flex flex-col md:flex-row gap-6 w-full justify-center max-w-4xl mx-auto">
-                    <button class="intro-nav-btn flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-indigo-500 dark:hover:border-indigo-400 p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group text-left relative overflow-hidden hover:-translate-y-1" data-target="view-componenti">
-                        <div class="absolute top-0 right-0 w-24 h-24 bg-indigo-50 dark:bg-indigo-900/20 rounded-bl-full -z-10 transition-transform group-hover:scale-150"></div>
-                        <div class="text-indigo-600 dark:text-indigo-400 mb-3"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg></div>
-                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1" data-i18n="nav_comp">Componenti</h3>
-                        <p class="text-sm text-slate-500 dark:text-slate-400">Esplora la libreria UI accessibile.</p>
+                    <button class="intro-nav-btn flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-indigo-500 dark:hover:border-indigo-400 p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 group text-left relative overflow-hidden hover:-translate-y-2" data-target="view-componenti">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-indigo-50 dark:bg-indigo-900/20 rounded-bl-full -z-10 transition-all duration-500 group-hover:scale-[3] group-hover:opacity-50"></div>
+                        <div class="text-indigo-600 dark:text-indigo-400 mb-3 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg></div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1 transition-colors" data-i18n="nav_comp">Componenti</h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 relative z-10">Esplora la libreria UI accessibile.</p>
                     </button>
-                    <button class="intro-nav-btn flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-400 p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group text-left relative overflow-hidden hover:-translate-y-1" data-target="view-casi-d-uso">
-                        <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-50 dark:bg-emerald-900/20 rounded-bl-full -z-10 transition-transform group-hover:scale-150"></div>
-                        <div class="text-emerald-600 dark:text-emerald-400 mb-3"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div>
-                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1" data-i18n="nav_cases">Casi d'Uso</h3>
-                        <p class="text-sm text-slate-500 dark:text-slate-400">Analisi UX e Redesign complessi.</p>
+                    <button class="intro-nav-btn flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-400 p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 group text-left relative overflow-hidden hover:-translate-y-2" data-target="view-casi-d-uso">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-50 dark:bg-emerald-900/20 rounded-bl-full -z-10 transition-all duration-500 group-hover:scale-[3] group-hover:opacity-50"></div>
+                        <div class="text-emerald-600 dark:text-emerald-400 mb-3 transform transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1 transition-colors" data-i18n="nav_cases">Casi d'Uso</h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 relative z-10">Analisi UX e Redesign complessi.</p>
                     </button>
-                    <button class="intro-nav-btn flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-amber-500 dark:hover:border-amber-400 p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group text-left relative overflow-hidden hover:-translate-y-1" data-target="view-contatti">
-                        <div class="absolute top-0 right-0 w-24 h-24 bg-amber-50 dark:bg-amber-900/20 rounded-bl-full -z-10 transition-transform group-hover:scale-150"></div>
-                        <div class="text-amber-600 dark:text-amber-400 mb-3"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div>
-                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1" data-i18n="nav_contact">Contatti</h3>
-                        <p class="text-sm text-slate-500 dark:text-slate-400">Lavoriamo insieme.</p>
+                    <button class="intro-nav-btn flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-amber-500 dark:hover:border-amber-400 p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 group text-left relative overflow-hidden hover:-translate-y-2" data-target="view-contatti">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-amber-50 dark:bg-amber-900/20 rounded-bl-full -z-10 transition-all duration-500 group-hover:scale-[3] group-hover:opacity-50"></div>
+                        <div class="text-amber-600 dark:text-amber-400 mb-3 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1 transition-colors" data-i18n="nav_contact">Contatti</h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 relative z-10">Lavoriamo insieme.</p>
                     </button>
                 </div>
             </section>
         </div>
 
         <!-- VIEW: COMPONENTI -->
-        <div id="view-componenti" class="view-section hidden animate-[fadeIn_0.3s_ease-out] flex-1 flex flex-col">
+        <div id="view-componenti" class="view-section hidden animate-fade-in-up flex-1 flex flex-col">
             <section class="py-12 px-6 sm:px-12 lg:px-24 bg-transparent transition-colors flex-1">
                 <div class="max-w-7xl mx-auto">
                     <div class="mb-12">
@@ -636,7 +642,7 @@
         </div>
 
         <!-- VIEW: CASI D'USO -->
-        <div id="view-casi-d-uso" class="view-section hidden animate-[fadeIn_0.3s_ease-out] flex-1 flex flex-col">
+        <div id="view-casi-d-uso" class="view-section hidden animate-fade-in-up flex-1 flex flex-col">
             <section class="py-12 px-6 sm:px-12 lg:px-24 bg-slate-100 dark:bg-slate-950 transition-colors flex-1">
                 <div class="max-w-7xl mx-auto">
                     <div class="mb-12">
@@ -936,8 +942,8 @@
         </div>
 
         <!-- VIEW: CONTATTI -->
-        <div id="view-contatti" class="view-section hidden animate-[fadeIn_0.3s_ease-out] flex-1 flex flex-col bg-slate-900 dark:bg-black transition-colors duration-500 relative overflow-hidden">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/20 dark:bg-purple-900/20 rounded-full blur-[100px] pointer-events-none"></div>
+        <div id="view-contatti" class="view-section hidden animate-fade-in-up flex-1 flex flex-col bg-slate-900 dark:bg-black transition-colors duration-500 relative overflow-hidden">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/20 dark:bg-purple-900/20 rounded-full blur-[100px] pointer-events-none transition-all duration-1000 ease-out animate-pulse"></div>
             
             <section class="flex-1 flex flex-col items-center justify-center text-white py-24 px-6 sm:px-12 lg:px-24 relative z-10">
                 <div class="max-w-3xl mx-auto text-center flex flex-col items-center gap-8">
@@ -965,7 +971,7 @@
     <footer class="bg-slate-50 dark:bg-slate-950 py-8 px-6 text-center text-slate-500 text-sm font-medium border-t border-slate-200 dark:border-slate-800 transition-colors duration-500 z-10 relative mt-auto">
         <div class="max-w-7xl mx-auto">
             <p class="mb-2" data-i18n="footer_copy">&copy; 2026 Roberto R. Progettato con cura. (Temi: Autunno 🍂 / Halloween 🎃)</p>
-            <p class="text-indigo-600 dark:text-indigo-500 text-xs font-mono font-bold tracking-widest mt-3">v1.2.8 &bull; Ultimo aggiornamento: 9 Settembre 2026</p>
+            <p class="text-indigo-600 dark:text-indigo-500 text-xs font-mono font-bold tracking-widest mt-3">v1.3.0 &bull; Ultimo aggiornamento: 9 Settembre 2026</p>
         </div>
     </footer>
 
